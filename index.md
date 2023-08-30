@@ -39,6 +39,9 @@ This project encompasses (1) extensive exploratory data analysis (EDA) on ridesh
 
 <a href="https://github.com/amytakeuchi/Bikeshare-Membership-Classification-analysis">View code on Github</a></p>
 
+<img src="images/Bike_img.png?" width="600" height="700"/>
+
+
 ---
 ### Fintech Customer Segmentation and Clustering
 ELo, the largest payment service in Brazil, has been partnering with merchants to offer promotions or discounts to cardholders. They are trying to understand the customer lifecycle to tailor their offers to individual purchase patterns.
@@ -47,7 +50,7 @@ Implemented customer cohort analysis, RFM segmentation, and K-means clustering m
 
 <a href="https://github.com/amytakeuchi/Customer-Merchant-Cohort-and-Clustering">View code on Github</a></p>
 
-<img src="images/Elo_Kmeans.png?" width="500" height="500"/>
+<img src="images/Elo_Kmeans.png?" width="400" height="400"/>
 
 
 - [Project 1 Title](http://example.com/)
