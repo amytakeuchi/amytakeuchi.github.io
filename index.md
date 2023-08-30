@@ -7,7 +7,7 @@ Cookie Cats, a popular mobile puzzle game, imposes a ‘gate’, where players a
 
 In this project, I designed and conducted Hypothesis Testing by understanding the business problem, forming a hypothesis, and evaluating the statistical significance for the Mobile Game user retention.
 
-[Project 1 Title](/sample_page)
+[View code on Github](/sample_page)
 #### Total Gamerounds played by the users who encountered gates at Lv. 30 vs Lv. 40
  <img src="images/Cookie_cat_img.png?" width="900" height="400"/>
 
@@ -17,12 +17,7 @@ Mercari, a Japanese online marketplace, is confronting a challenge to determine 
 
 In this project, I (1) created 20+ Visualizations to identify the patterns and trends for the pricing of listed products, (2) built a listing price recommendation tool based on listing features and different Linear Regression models, using Python ScikitLearn and Pandas, (3) conducted Topic Modeling to identify the top 10 topics that appear in the descriptions of listings; performed extensive text data cleaning.
 
-[Project 2 Title](/pdf/sample_presentation.pdf)
-<img src="images/dummy_thumbnail.jpg?raw=true"/>
-
-[Project 3 Title](http://example.com/)
-<img src="images/dummy_thumbnail.jpg?raw=true"/>
-
+[View code on Github](/Marketplace-price-prediction)
 ---
 
 ### Chicago Divvy bike share membership prediction
@@ -46,6 +41,12 @@ Implemented customer cohort analysis, RFM segmentation, and K-means clustering m
 - [Project 5 Title](http://example.com/)
 
 ---
+
+[Project 2 Title](/pdf/sample_presentation.pdf)
+<img src="images/dummy_thumbnail.jpg?raw=true"/>
+
+[Project 3 Title](http://example.com/)
+<img src="images/dummy_thumbnail.jpg?raw=true"/>
 
 
 
