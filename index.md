@@ -21,7 +21,7 @@ In this project, I (1) created 20+ Visualizations to identify the patterns and t
 <br><br>
 <a href="https://github.com/amytakeuchi/Marketplace-price-prediction">View code on Github</a>
 Copy code
-<p>View code on GitHub: <a href="https://github.com/amytakeuchi/Marketplace-price-prediction">Repository Name</a></p>
+<a href="https://github.com/amytakeuchi/Marketplace-price-prediction">View code on Github</a></p>
 
 ---
 
