@@ -18,7 +18,8 @@ Mercari, a Japanese online marketplace, is confronting a challenge to determine 
 In this project, I (1) created 20+ Visualizations to identify the patterns and trends for the pricing of listed products, (2) built a listing price recommendation tool based on listing features and different Linear Regression models, using Python ScikitLearn and Pandas, (3) conducted Topic Modeling to identify the top 10 topics that appear in the descriptions of listings; performed extensive text data cleaning.
 
 [View code on Github](/(https://github.com/amytakeuchi/Marketplace-price-prediction))
-<a href="[https://www.linkedin.com/in/example](https://github.com/amytakeuchi/Marketplace-price-prediction)/">View My LinkedIn Profile</a>
+<br><br>
+<a href="[https://www.linkedin.com/in/example](https://github.com/amytakeuchi/Marketplace-price-prediction)/">View code on Github</a>
 
 ---
 
