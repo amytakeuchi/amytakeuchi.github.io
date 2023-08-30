@@ -40,7 +40,7 @@ This project encompasses (1) extensive exploratory data analysis (EDA) on ridesh
 
 <a href="https://github.com/amytakeuchi/Bikeshare-Membership-Classification-analysis">View code on Github</a>
 
-<div style="width: 1100px; height: 700px;">
+<div style="width: 1100px; height: 600px;">
   <img src="images/Bike_img.png" alt="Bike Image">
 </div>
 
