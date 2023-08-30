@@ -47,6 +47,8 @@ Implemented customer cohort analysis, RFM segmentation, and K-means clustering m
 
 <a href="https://github.com/amytakeuchi/Customer-Merchant-Cohort-and-Clustering">View code on Github</a></p>
 
+<img src="images/Elo_Kmeans.png?" width="500" height="500"/>
+
 
 - [Project 1 Title](http://example.com/)
 - [Project 2 Title](http://example.com/)
