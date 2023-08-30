@@ -17,14 +17,16 @@ Mercari, a Japanese online marketplace, is confronting a challenge to determine 
 
 In this project, I (1) created 20+ Visualizations to identify the patterns and trends for the pricing of listed products, (2) built a listing price recommendation tool based on listing features and different Linear Regression models, using Python ScikitLearn and Pandas, (3) conducted Topic Modeling to identify the top 10 topics that appear in the descriptions of listings; performed extensive text data cleaning.
 
-[View code on Github](/amytakeuchi/Marketplace-price-prediction)
 <br><br>
-<a href="https://github.com/amytakeuchi/Marketplace-price-prediction">View code on Github</a>
-Copy code
 <a href="https://github.com/amytakeuchi/Marketplace-price-prediction">View code on Github</a></p>
 
 ---
+### ETL project of invoice data
 
+<br><br>
+<a href="https://github.com/amytakeuchi/ETL/tree/main">View code on Github</a></p>
+
+---
 ### Chicago Divvy bike share membership prediction
 Divvy, a prominent bike share service offered in Chicago, offers annual membership while users have the option to use one-time payment as casual users. The provider is trying hard to convert casual users to subscribe to annual membership.
 
@@ -32,11 +34,15 @@ This project encompasses (1) extensive exploratory data analysis (EDA) on ridesh
 (2) Developed a binary classification tool to predict the membership status of the users. Assessed 5 different Machine Learning models (Logistic Regression, KNN, Naive Bayes, Gradient Boosting, Random Forrest) and utilized the most effective model to enable targeted marketing for future strategic initiative.
 (3) Retrieved, cleaned, and integrated Chicago's weather data using Python.
 
+<a href="https://github.com/amytakeuchi/Bikeshare-Membership-Classification-analysis">View code on Github</a></p>
+
 ---
 ### Fintech Customer Segmentation and Clustering
 ELo, the largest payment service in Brazil, has been partnering with merchants to offer promotions or discounts to cardholders. They are trying to understand the customer lifecycle to tailor their offers to individual purchase patterns.
 
 Implemented customer cohort analysis, RFM segmentation, and K-means clustering methodology to understand purchasing patterns based on transaction history data with 1.9 million rows, enabling actionable insights for targeted marketing campaigns, personalized customer experiences, and identification of high-value customers.
+
+<a href="https://github.com/amytakeuchi/Customer-Merchant-Cohort-and-Clustering">View code on Github</a></p>
 
 
 - [Project 1 Title](http://example.com/)
