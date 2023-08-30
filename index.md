@@ -20,9 +20,9 @@ In this project, I (1) created 20+ Visualizations to identify the patterns and t
 <br><br>
 <a href="https://github.com/amytakeuchi/Marketplace-price-prediction">View code on Github</a>
 
- <img src="images/Mercari_img.png?" width="600" height="300"/>
+<img src="images/Mercari_img.png?" width="600" height="300"/>
 
-
+ 
 ---
 ### ETL project of invoice data
 Extracted, cleaned, transformed, merged, and warehoused a dataset of retail inventory data.
