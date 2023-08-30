@@ -9,7 +9,7 @@ In this project, I designed and conducted Hypothesis Testing by understanding th
 
 [Project 1 Title](/sample_page)
 #### Total Gamerounds played by the users who encountered gates at Lv. 30 vs Lv. 40
- <img src="images/Mobilegame_Total_gameround.png?" width="400" height="200"/>
+ <img src="images/Cookie_cat_img.png?" width="700" height="200"/>
 
 ---
 ### Marketplace Listing Price Prediction
