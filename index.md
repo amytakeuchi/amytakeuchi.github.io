@@ -19,7 +19,9 @@ In this project, I (1) created 20+ Visualizations to identify the patterns and t
 
 [View code on Github](/amytakeuchi/Marketplace-price-prediction)
 <br><br>
-<a href="[https://www.linkedin.com/in/example](https://github.com/amytakeuchi/Marketplace-price-prediction)/">View code on Github</a>
+<a href="https://github.com/amytakeuchi/Marketplace-price-prediction">View code on Github</a>
+Copy code
+<p>View code on GitHub: <a href="https://github.com/amytakeuchi/Marketplace-price-prediction">Repository Name</a></p>
 
 ---
 
