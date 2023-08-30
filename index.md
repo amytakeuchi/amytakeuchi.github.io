@@ -37,9 +37,9 @@ This project encompasses (1) extensive exploratory data analysis (EDA) on ridesh
 (2) Developed a binary classification tool to predict the membership status of the users. Assessed 5 different Machine Learning models (Logistic Regression, KNN, Naive Bayes, Gradient Boosting, Random Forrest) and utilized the most effective model to enable targeted marketing for future strategic initiative.
 (3) Retrieved, cleaned, and integrated Chicago's weather data using Python.
 
-<a href="https://github.com/amytakeuchi/Bikeshare-Membership-Classification-analysis">View code on Github</a></p>
+<a href="https://github.com/amytakeuchi/Bikeshare-Membership-Classification-analysis">View code on Github</a>
 
-<img src="images/Bike_img.png?" width="800" height="900"/>
+<img src="images/Bike_img.png?" width="900" height="700"/>
 
 
 ---
@@ -48,7 +48,7 @@ ELo, the largest payment service in Brazil, has been partnering with merchants t
 
 Implemented customer cohort analysis, RFM segmentation, and K-means clustering methodology to understand purchasing patterns based on transaction history data with 1.9 million rows, enabling actionable insights for targeted marketing campaigns, personalized customer experiences, and identification of high-value customers.
 
-<a href="https://github.com/amytakeuchi/Customer-Merchant-Cohort-and-Clustering">View code on Github</a></p>
+<a href="https://github.com/amytakeuchi/Customer-Merchant-Cohort-and-Clustering">View code on Github</a>
 
 <img src="images/Elo_Kmeans.png?" width="400" height="400"/>
 
