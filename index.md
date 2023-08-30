@@ -9,7 +9,7 @@ In this project, I designed and conducted Hypothesis Testing by understanding th
 
 [View code on Github](/sample_page)
 #### Total Gamerounds played by the users who encountered gates at Lv. 30 vs Lv. 40
- <img src="images/Cookie_cat_img.png?" width="900" height="400"/>
+ <img src="images/Cookie_cat_img.png?" width="600" height="300"/>
 
 ---
 ### Marketplace Listing Price Prediction
@@ -18,13 +18,16 @@ Mercari, a Japanese online marketplace, is confronting a challenge to determine 
 In this project, I (1) created 20+ Visualizations to identify the patterns and trends for the pricing of listed products, (2) built a listing price recommendation tool based on listing features and different Linear Regression models, using Python ScikitLearn and Pandas, (3) conducted Topic Modeling to identify the top 10 topics that appear in the descriptions of listings; performed extensive text data cleaning.
 
 <br><br>
-<a href="https://github.com/amytakeuchi/Marketplace-price-prediction">View code on Github</a></p>
+<a href="https://github.com/amytakeuchi/Marketplace-price-prediction">View code on Github</a>
+
+ <img src="images/Mercari_img.png.png?" width="600" height="300"/>
+
 
 ---
 ### ETL project of invoice data
 
 <br><br>
-<a href="https://github.com/amytakeuchi/ETL/tree/main">View code on Github</a></p>
+<a href="https://github.com/amytakeuchi/ETL/tree/main">View code on Github</a>
 
 ---
 ### Chicago Divvy bike share membership prediction
