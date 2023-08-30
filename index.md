@@ -26,7 +26,12 @@ In this project, I (1) created 20+ Visualizations to identify the patterns and t
 
 ---
 
-### Marketplace price Prediction
+### Chicago Divvy bike share membership prediction
+Divvy, a prominent bike share service offered in Chicago, offers annual membership while users have the option to use one-time payment as casual users. The provider is trying hard to convert casual users to subscribe to annual membership.
+
+This project encompasses (1) extensive exploratory data analysis (EDA) on rideshare service data, employing statistical techniques and visualization tools to gain insights into user behavior and patterns.
+(2) Developed a binary classification tool to predict the membership status of the users. Assessed 5 different Machine Learning models (Logistic Regression, KNN, Naive Bayes, Gradient Boosting, Random Forrest) and utilized the most effective model to enable targeted marketing for future strategic initiative.
+(3) Retrieved, cleaned, and integrated Chicago's weather data using Python.
 
 - [Project 1 Title](http://example.com/)
 - [Project 2 Title](http://example.com/)
