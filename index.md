@@ -40,9 +40,6 @@ This project encompasses (1) extensive exploratory data analysis (EDA) on ridesh
 
 <a href="https://github.com/amytakeuchi/Bikeshare-Membership-Classification-analysis">View code on Github</a>
 
-<img src="images/Bike_img.png?" width="700" height="400"/>
-
-
 ---
 ### Fintech Customer Segmentation and Clustering
 ELo, the largest payment service in Brazil, has been partnering with merchants to offer promotions or discounts to cardholders. They are trying to understand the customer lifecycle to tailor their offers to individual purchase patterns.
