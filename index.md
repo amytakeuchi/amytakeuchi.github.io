@@ -8,7 +8,7 @@ Cookie Cats, a popular mobile puzzle game, imposes a ‘gate’, where players a
 In this project, I designed and conducted Hypothesis Testing by understanding the business problem, forming a hypothesis, and evaluating the statistical significance for the Mobile Game user retention.
 
 [Project 1 Title](/sample_page)
-<img src="images/Mobilegame_Total_gameround.png?raw=true"/>
+<img src="images/Mobilegame_Total_gameround.png? =250x250"/>
 
 ---
 [Project 2 Title](/pdf/sample_presentation.pdf)
