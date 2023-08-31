@@ -9,8 +9,26 @@ Cookie Cats is a hugely popular mobile puzzle game developed by Tactile Entertai
 
 As players advance in the game, they'll encounter occasional gates that require a significant amount of waiting timeor making in-app purchases to proceed, boosting purchases and providing players a necessary pause, potentially enhancing their enjoyment and prolonging engagement. Initially set at level 30, we'll analyze an AB-test in Cookie Cats, shifting the first gate to level 40, specifically assessing its effect on player retention. In particular, the impact on player retention is focused.
 
+#### 2. Designing the Hypothesis
+The data was collected from 90,189 players who installed the game while the AB test was running.
+The variables of the dataset are: 
+- **'userid':** special number given to each player
+- **'version':** the players were split into two groups: one called the control group, where players had a gate at level 30 (gate_30), and the other called the test group, where players had a gate at level 40 (gate_40).
+- **'sum_gamerounds':** how many rounds of the game each player played in the first week after they installed the game.
+- **'retention_1':** checked if players came back to play the game again after 1 day.
+- **'retention_7':** checked if players came back after 7 days.
+
+When a player got the game, they were randomly put into either the gate_30 or gate_40 group.
+
 ### 2. Designing the Hypothesis
  <img src="images/Cookiecat_Hypothesis.png?raw=true"/>
+
+The key metric we are going to take into account is the retention rate. The experiment records the retention after 1 day and 7 days respectively and the retention rate for both will be evaluated.
+
+This time, we are going to form the null hypothesis as H1: p0 = p1, which means that the control group is not significantly different from the treatment group. On the other hand, the alternative hypothesis is defined as H1: p0 =! p1 which equals that the control group is significantly different from the treatment group. 
+
+Also, the alpha is defined as 0.05 and this indicates 95% confidence intervals.
+Since the dataset has a large number of entries with 90,189 rows, the size is enough to drive a precise z-test here, therefore, we are not sampling the data this time.
 
 ### 3. Summary Statistics and Visualization
  <img src="images/Cookiecat_viz.png?raw=true"/>
