@@ -32,7 +32,7 @@ Since the dataset has a large number of entries with 90,189 rows, the size is en
 
 ### 3. Summary Statistics and Visualization
  <img src="images/Cookiecat_viz.png?raw=true"/>
- The summary statistics of the dataset were as follows:
+ The summary statistics of the 'sum_gamerounds' of the dataset were as follows:
   <img src="images/Cookiecat_sumstats.png?raw=true"/>
 
 After exploring the data, there were no missing values but some outliers in the dataset. 
@@ -49,11 +49,11 @@ As a result of z-test for 1-day retention data, following was found. The z stati
  For the 7-days retention rate, the p-value is way below the 0.05 significance level and the null is clearly rejected. Also, z statistics is larger than 1 day retention, indicating a larger standard deviation away from the mean. The gate should stay in the Lv 30 to retain the users for 7 days.
 
 ### 5. Evaluate the results/Business recommendations
-Let's go back to the business question: does moving the first gate in Cookie Cats from level 30 to level 40 affect player retention and a number of rounds? This time, we set the retention rate as the primary metric to assess the problem.
+**Let's go back to the business question**: does moving the first gate in Cookie Cats from level 30 to level 40 affect player retention and a number of rounds? This time, we set the retention rate as the primary metric to assess the problem.
 
 By performing z-test, the null hypothesis, which defined as both groups do not have significant differences in retention rate, was rejected, particularly for 7-day retention rate. While the 1-day retention rate does not have a significant difference between both level, the significance level was not so far from the threshold of 0.05 and not strongly denied. The 7-day retention was clearly higher for the lv 30 group with a retention rate between 18.7 - 19.4% for the control group with a 95% confidence level.
 
-The suggestion that can be made from this result is: the gate should stay in Lv. 30 to retain the customer for both 1 day and 7 days, especially for the 7-day retention rates.
+**The business suggestion that can be made from this result is**: the gate should stay in Lv. 30 to retain the customer for both 1 day and 7 days, especially for the 7-day retention rates.
 
 Additional insights found form examining the data was:
 - There were no missing values but some outliers in the dataset.
