@@ -9,7 +9,7 @@ In this project, I designed and conducted Hypothesis Testing by understanding th
 
 <a href="https://github.com/amytakeuchi/blob/main/01.%20Mobile%20Game_ABTesting.ipynb">View code on Github</a>
 <br><br>
-[Sample page](/ABTesting.)
+[Sample page](/ABTesting)
 #### Total Gamerounds played by the users who encountered gates at Lv. 30 vs Lv. 40
  <img src="images/Cookie_cat_img.png?" width="600" height="300"/>
 
