@@ -4,7 +4,8 @@
 
 ### 1. Problem Statement
 
-Cookie Cats is a hugely popular mobile puzzle game developed by Tactile Entertainment. It's a classic "connect three"-"-style puzzle game where the player must connect tiles of the same color to clear the board and win the level. It also features singing cats.
+Cookie Cats is a hugely popular mobile puzzle game developed by Tactile Entertainment. It's a classic "connect three"--style puzzle game where the player must connect tiles of the same color to clear the board and win the level. It also features singing cats.
+ <img src="images/Cookie_cat_img.png?" width="600" height="300"/>
 
 As players advance in the game, they'll encounter occasional gates that require a significant amount of waiting timeor making in-app purchases to proceed, boosting purchases and providing players a necessary pause, potentially enhancing their enjoyment and prolonging engagement. Initially set at level 30, we'll analyze an AB-test in Cookie Cats, shifting the first gate to level 40, specifically assessing its effect on player retention. In particular, the impact on player retention is focused.
 
