@@ -4,11 +4,9 @@
 
 ### 1. Problem Statement
 
-Cookie Cats is a hugely popular mobile puzzle game developed by Tactile Entertainment. It's a classic "connect three"-style puzzle game where the player must connect tiles of the same color to clear the board and win the level. It also features singing cats.
+Cookie Cats is a hugely popular mobile puzzle game developed by Tactile Entertainment. It's a classic "connect three"-"-style puzzle game where the player must connect tiles of the same color to clear the board and win the level. It also features singing cats.
 
-As players progress through the levels of the game, they will occasionally encounter gates that force them to wait a non-trivial amount of time or make an in-app purchase to progress. In addition to driving in-app purchases, these gates serve the important purpose of giving players an enforced break from playing the game, hopefully resulting in that the player's enjoyment of the game being increased and prolonged.
-
-But where should the gates be placed? Initially the first gate was placed at level 30. In this project, we're going to analyze an AB-test where we moved the first gate in Cookie Cats from level 30 to level 40. In particular, we will look at the impact on player retention.
+As players advance in the game, they'll encounter occasional gates that require a significant amount of waiting timeor making in-app purchases to proceed, boosting purchases and providing players a necessary pause, potentially enhancing their enjoyment and prolonging engagement. Initially set at level 30, we'll analyze an AB-test in Cookie Cats, shifting the first gate to level 40, specifically assessing its effect on player retention. In particular, the impact on player retention is focused.
 
 ### 2. Designing the Hypothesis
 
