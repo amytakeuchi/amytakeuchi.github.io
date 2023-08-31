@@ -10,24 +10,18 @@ As players progress through the levels of the game, they will occasionally encou
 
 But where should the gates be placed? Initially the first gate was placed at level 30. In this project, we're going to analyze an AB-test where we moved the first gate in Cookie Cats from level 30 to level 40. In particular, we will look at the impact on player retention.
 
-```javascript
-if (isAwesome){
-  return true
-}
-```
-
 ### 2. Designing the Hypothesis
 
 
 
+### 3. Summary Statistics and Visualization
+
+
+### 4. Hypothesis Testing
+
+
+### 5. Evaluate the results/Business recommendations
 
 
 
 
-
-```javascriptssumptions on which statistical inference will be based
-
-```javascript
-if (isAwesome){
-  return true
-}
