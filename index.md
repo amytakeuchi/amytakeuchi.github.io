@@ -7,7 +7,7 @@ Cookie Cats, a popular mobile puzzle game, imposes a ‘gate’, where players a
 
 In this project, I designed and conducted Hypothesis Testing by understanding the business problem, forming a hypothesis, and evaluating the statistical significance for the Mobile Game user retention.
 
-[Project Summary](/ABTesting)
+[Project Summary Page](/ABTesting)
 
 <a href="https://github.com/amytakeuchi/AB-Testing/tree/main">View code on Github</a>
 <br><br>
@@ -27,7 +27,7 @@ In this project, I (1) created 20+ Visualizations to identify the patterns and t
 
 <img src="images/Mercari_img.png?" width="600" height="300"/>
 
-[![](https://img.shields.io/badge/Python-white?logo=Python)](#) [![](https://img.shields.io/badge/Jupyter-white?logo=Jupyter)](#) [![](https://img.shields.io/badge/Google-white?logo=Google)](#) [![](https://img.shields.io/badge/sklearn-white?logo=scikit-learn)](#)[![](https://img.shields.io/badge/pandas-white?]
+[![](https://img.shields.io/badge/Python-white?logo=Python)](#) [![](https://img.shields.io/badge/Jupyter-white?logo=Jupyter)](#) [![](https://img.shields.io/badge/Google-white?logo=Google)](#) [![](https://img.shields.io/badge/sklearn-white?logo=scikit-learn)](#)[![](https://img.shields.io/badge/pandas-white?logo=pandas)](#)
  
 ---
 ### ETL project of invoice data
