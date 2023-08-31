@@ -32,6 +32,9 @@ Since the dataset has a large number of entries with 90,189 rows, the size is en
 
 ### 3. Summary Statistics and Visualization
  <img src="images/Cookiecat_viz.png?raw=true"/>
+ The summary statistics of the dataset were as follows:
+  <img src="images/Cookiecat_sumstats.png?raw=true"/>
+
 After exploring the data, there were no missing values but some outliers in the dataset. 
 The retention rates after 1 day are 44.8% (Gate 30) vs 44.2% (Gate 40) while 7-day retention rates are 19% (Gate 30) vs 18.2% for (Gate 40). Putting the date at lv.30 has slightly higher retention on the both day(s).
 
