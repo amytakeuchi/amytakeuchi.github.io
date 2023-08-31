@@ -55,7 +55,7 @@ By performing z-test, the null hypothesis, which defined as both groups do not h
 
 **The business suggestion that can be made from this result is**: the gate should stay in Lv. 30 to retain the customer for both 1 day and 7 days, especially for the 7-day retention rates.
 
-Additional insights found form examining the data was:
+Additional insights found from examining the data were:
 - There were no missing values but some outliers in the dataset.
 - 3994 players never played the game after installing.
 - As the game rounds progress, fewer players are retained in the game
