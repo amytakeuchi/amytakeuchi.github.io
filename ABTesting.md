@@ -10,6 +10,7 @@ Cookie Cats is a hugely popular mobile puzzle game developed by Tactile Entertai
 As players advance in the game, they'll encounter occasional gates that require a significant amount of waiting timeor making in-app purchases to proceed, boosting purchases and providing players a necessary pause, potentially enhancing their enjoyment and prolonging engagement. Initially set at level 30, we'll analyze an AB-test in Cookie Cats, shifting the first gate to level 40, specifically assessing its effect on player retention. In particular, the impact on player retention is focused.
 
 ### 2. Designing the Hypothesis
+ <img src="images/Cookiecat_Hypothesis.png?" width="600" height="300"/>
 
 
 
