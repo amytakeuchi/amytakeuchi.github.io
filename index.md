@@ -11,8 +11,6 @@ In this project, I designed and conducted Hypothesis Testing by understanding th
 
 <a href="https://github.com/amytakeuchi/AB-Testing/tree/main">View code on Github</a>
 <br><br>
-
-#### Total Gamerounds played by the users who encountered gates at Lv. 30 vs Lv. 40
  <img src="images/Cookiecat_cover.png?raw=true"/>
 
 ---
