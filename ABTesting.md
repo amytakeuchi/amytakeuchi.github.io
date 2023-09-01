@@ -7,7 +7,9 @@
 Cookie Cats is a hugely popular mobile puzzle game developed by Tactile Entertainment. It's a classic "connect three"--style puzzle game where the player must connect tiles of the same color to clear the board and win the level. It also features singing cats.
  <img src="images/Cookiecat_img.png?raw=true"/>
 
-As players advance in the game, they'll encounter occasional gates that require a significant amount of waiting timeor making in-app purchases to proceed, boosting purchases and providing players a necessary pause, potentially enhancing their enjoyment and prolonging engagement. We will initially divide players into two groups: one at level 30 and the other at level 40. Our specific focus will be on evaluating the impact of this level difference on player retention. 
+As players advance in the game, they'll encounter occasional gates that require a significant amount of waiting timeor making in-app purchases to proceed, boosting purchases and providing players a necessary pause, potentially enhancing their enjoyment and prolonging engagement. This time, the company wants to know where should they impose the first gate to the players to retain more users. They will initially divide players into two groups: one that encounters the gate at level 30 and the other at level 40. Their specific focus will be on evaluating the impact of this level difference on player retention. 
+
+**The business question:** Is there an influence on player retention and the number of rounds played when we shift the gate in Cookie Cats from level 30 to level 40? In this analysis, we prioritize evaluating the issue based on the retention rate as the primary metric.
 
 #### The dataset we are going to use:
 The data was collected from 90,189 players who installed the game while the AB test was running.
@@ -25,7 +27,7 @@ When a player got the game, they were randomly put into either the gate_30 or ga
 
 The key metric we are going to take into account is the retention rate. The experiment records the retention after 1 day and 7 days respectively and the retention rate for both will be evaluated.
 
-This time, we are going to form the null hypothesis as H1: p0 = p1, which means that the control group is not significantly different from the treatment group. On the other hand, the alternative hypothesis is defined as H1: p0 =! p1 which equals that the control group is significantly different from the treatment group. 
+This time, we are going to form the null hypothesis as H1: p0 = p1, which means that the control group, the group of players who encounter gates at Lv. 30, is not significantly different from the treatment group, th players meet the gate at Lv. 40. On the other hand, the alternative hypothesis is defined as H1: p0 =! p1 which equals that the control group is significantly different from the treatment group. 
 
 Also, the alpha is defined as 0.05 and this indicates 95% confidence intervals.
 Since the dataset has a large number of entries with 90,189 rows, the size is enough to drive a precise z-test here, therefore, we are not sampling the data this time.
