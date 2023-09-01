@@ -20,8 +20,6 @@ In this project, I designed and conducted Hypothesis Testing by understanding th
 Mercari, a Japanese online marketplace, is confronting a challenge to determine the product listing price based on different product categories, brand names, and specs and make suggestions about the optimal selling price to the sellers.
 
 In this project, I (1) created 20+ Visualizations to identify the patterns and trends for the pricing of listed products, (2) built a listing price recommendation tool based on listing features and different Linear Regression models, using Python ScikitLearn and Pandas, (3) conducted Topic Modeling to identify the top 10 topics that appear in the descriptions of listings; performed extensive text data cleaning.
-
-
 <br><br>
 <a href="https://github.com/amytakeuchi/Marketplace-price-prediction">View code on Github</a>
 
