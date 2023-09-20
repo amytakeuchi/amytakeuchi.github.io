@@ -35,7 +35,7 @@ Since the dataset has a large number of entries with 90,189 rows, the size is en
 #### Z-Statistics:
 I am going to perform Z-test to examine the statistical significance of the hypothesis here. Z-Statistics is a statistical measure that quantifies how far a data point is from the mean (average) of a dataset in terms of standard deviations. It is commonly used in hypothesis testing, particularly in the context of normal distribution.
 
- <img src="images/ztest.png?raw=true"/>
+ <img src="images/ztest.png?raw=true" width="400" height="300"/>
  
 The Z-statistic represents the number of standard deviations a data point is from the mean. A positive Z-score indicates that the data point is above the mean, while a negative Z-score indicates that it is below the mean. The magnitude of the Z-score reflects how extreme or unusual the data point is in comparison to the rest of the data.
 
