@@ -32,6 +32,15 @@ This time, we are going to form the null hypothesis as H1: p0 = p1, which means 
 Also, the alpha is defined as 0.05 and this indicates 95% confidence intervals.
 Since the dataset has a large number of entries with 90,189 rows, the size is enough to drive a precise z-test here, therefore, we are not sampling the data this time.
 
+#### Z-Statistics:
+I am going to perform Z-test to examine the statistical significance of the hypothesis here. Z-Statistics is a statistical measure that quantifies how far a data point is from the mean (average) of a dataset in terms of standard deviations. It is commonly used in hypothesis testing, particularly in the context of normal distribution.
+
+ <img src="images/Cookiecat_Hypothesis.png?raw=true"/>
+ 
+The Z-statistic represents the number of standard deviations a data point is from the mean. A positive Z-score indicates that the data point is above the mean, while a negative Z-score indicates that it is below the mean. The magnitude of the Z-score reflects how extreme or unusual the data point is in comparison to the rest of the data.
+
+The p-value is the probability associated with the observed Z-statistic(s). A smaller p-value indicates stronger evidence against the null hypothesis. If the p-value is smaller than a predetermined significance level (e.g., 0.05), you may reject the null hypothesis in favor of the alternative hypothesis.
+
 ### 3. Summary Statistics and Visualization
  <img src="images/Cookiecat_viz.png?raw=true"/>
  The summary statistics of the 'sum_gamerounds' of the dataset were as follows:
