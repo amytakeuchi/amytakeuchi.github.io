@@ -30,9 +30,10 @@ In this project, I (1) created 20+ Visualizations to identify the patterns and t
 #### Diabetes Prediction
 In this project, I created visualizations and built binary classification models using Logistic Regression, Random Forest, and Gradient boosting to predict diabetes using patient data. Involves data visualization and preprocessing in PCA and resampling using ADASYN.
 
+<a href="https://github.com/amytakeuchi/Healthcare-Analytics/tree/main">View code on Github</a>
+
 <img src="images/Diabetes_prediction.png?raw=true"/>
 
-<a href="https://github.com/amytakeuchi/Healthcare-Analytics/tree/main">View code on Github</a>
 
 
 ---
