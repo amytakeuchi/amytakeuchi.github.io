@@ -26,11 +26,11 @@ In this project, I (1) created 20+ Visualizations to identify the patterns and t
 [![](https://img.shields.io/badge/Python-white?logo=Python)](#) [![](https://img.shields.io/badge/Jupyter-white?logo=Jupyter)](#) [![](https://img.shields.io/badge/Google-white?logo=Google)](#) [![](https://img.shields.io/badge/sklearn-white?logo=scikit-learn)](#)[![](https://img.shields.io/badge/pandas-white?logo=pandas)](#)
  
 ---
-### ETL project of invoice data
-Extracted, cleaned, transformed, merged, and warehoused a dataset of retail inventory data.
+### Healthcare Analytics
+#### Diabetes Prediction
+In this project, I created visualizations and built binary classification models using Logistic Regression, Random Forest, and Gradient boosting to predict diabetes using patient data. Involves data visualization and preprocessing in PCA and resampling using ADASYN.
+<a href="https://github.com/amytakeuchi/Healthcare-Analytics/tree/main">View code on Github</a>
 
-<br><br>
-<a href="https://github.com/amytakeuchi/ETL/tree/main">View code on Github</a>
 
 ---
 ### Chicago Divvy bike share membership prediction
@@ -56,4 +56,9 @@ Implemented customer cohort analysis, RFM segmentation, and K-means clustering m
 
 
 ---
+### ETL project of invoice data
+Extracted, cleaned, transformed, merged, and warehoused a dataset of retail inventory data.
+
+<br><br>
+<a href="https://github.com/amytakeuchi/ETL/tree/main">View code on Github</a>
 
