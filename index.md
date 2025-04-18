@@ -19,7 +19,7 @@ A leading telecommunications company was facing high customer attrition and need
 
 In this project, I (1) conducted exploratory data analysis (EDA) and created 20+ visualizations to uncover key patterns in customer churn behavior, (2) engineered domain-specific features from raw customer data, assessed multicollinearity, and applied ADASYN to address class imbalance, (3) developed and compared Logistic Regression, Random Forest, XGBoost, and AdaBoost models using GridSearchCV, improving Logistic Regression accuracy from 0.26 to 0.81 and F1 score from 0.42 to 0.63. All modeling and analysis were performed in Python using Scikit-learn, XGBoost, and Pandas.
 
-<a href="https://github.com/amytakeuchi/Healthcare-Analytics/tree/main">View code on Github</a>
+<a href="https://github.com/amytakeuchi/Customer-Churn-Classification">View code on Github</a>
 
 ---
 ### Marketplace Listing Price Prediction
@@ -27,7 +27,7 @@ Mercari, a Japanese online marketplace, is confronting a challenge to determine 
 
 In this project, I (1) created 20+ Visualizations to identify the patterns and trends for the pricing of listed products, (2) built a listing price recommendation tool based on listing features and different Linear Regression models, using Python ScikitLearn and Pandas, (3) conducted Topic Modeling to identify the top 10 topics that appear in the descriptions of listings and visualized using PCA and t-SNE; performed extensive text data cleaning.
 <br><br>
-<a href="[https://github.com/amytakeuchi/Customer-Churn-Classification]">View code on Github</a>
+<a href="[https://github.com/amytakeuchi/Marketplace-price-prediction]">View code on Github</a>
 
 <img src="images/Mercari_img.png?" width="600" height="300"/>
 
