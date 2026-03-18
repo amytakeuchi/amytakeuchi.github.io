@@ -12,10 +12,8 @@ The three valid methods (CUPED, SCM, Bayes hierarchical) converge on a consensus
 
 <a href="https://github.com/amytakeuchi/Spillover-Aware-Geo-Incrementality-Experiment-Pipeline/tree/main">View code on Github</a>
 <br>
-<a href="https://medium.com/@a.takeuchi121/building-a-production-grade-geo-incrementality-system-how-synthetic-control-failed-by-18-and-bd497ebefa08">Debugging write-up: Building a Production-Grade Geo Incrementality System: How Synthetic Control Failed by 18× — and What Fixed It →
+Debugging write-up: <a href="https://medium.com/@a.takeuchi121/building-a-production-grade-geo-incrementality-system-how-synthetic-control-failed-by-18-and-bd497ebefa08"> Building a Production-Grade Geo Incrementality System: How Synthetic Control Failed by 18× — and What Fixed It →
 </a>
-
-Debugging write-up: Building a Production-Grade Geo Incrementality System: How Synthetic Control Failed by 18× — and What Fixed It →
 
 ---
 
