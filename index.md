@@ -11,6 +11,7 @@ The central finding is not the lift estimate — it is that three of the five es
 The three valid methods (CUPED, SCM, Bayes hierarchical) converge on a consensus range of 83K–94K incremental units against a ground truth of 91.5K. The primary estimator is selected by a rule-based validity gate that ranks on CI availability, not point accuracy — because an iROAS without confidence bounds is not a reportable business metric.
 
 <a href="https://github.com/amytakeuchi/Spillover-Aware-Geo-Incrementality-Experiment-Pipeline/tree/main">View code on Github</a>
+<br>
 <a href="https://medium.com/@a.takeuchi121/building-a-production-grade-geo-incrementality-system-how-synthetic-control-failed-by-18-and-bd497ebefa08">Debugging write-up: Building a Production-Grade Geo Incrementality System: How Synthetic Control Failed by 18× — and What Fixed It →
 </a>
 
