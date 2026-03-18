@@ -1,6 +1,18 @@
 ## Portfolio
 
 ---
+### Geo Incrementality Measurement — Causal Inference Pipeline
+Paid social campaigns are easy to run and hard to measure. Attribution tools overcount. Last-click models ignore cannibalization. Aggregate sales trends conflate campaign effects with seasonality. The only credible answer is a geo experiment with a rigorous causal estimator — but even then, a single model is not enough.
+
+This project builds a production-style geo incrementality measurement pipeline across 60 markets, implementing five causal estimators in parallel (DiD, TBR, CUPED, CUPAC, Synthetic Control, Bayesian Hierarchical), a spillover-aware validity gate, and a business reporting layer that translates statistical lift into iROAS with full confidence interval propagation.
+
+The central finding is not the lift estimate — it is that three of the five estimators fail on the same dataset for different, diagnosable reasons: DiD inverts the sign due to spillover contamination, TBR attenuates by 16% for the same reason, and the initial Synthetic Control overshoots ground truth by 18× due to a donor scaling bug that passed LOO stability checks. Identifying, diagnosing, and fixing the SCM failure — collapsing pre-fit RMSPE from 51,332 to 1,998 — is the core technical contribution.
+
+The three valid methods (CUPED, SCM, Bayes hierarchical) converge on a consensus range of 83K–94K incremental units against a ground truth of 91.5K. The primary estimator is selected by a rule-based validity gate that ranks on CI availability, not point accuracy — because an iROAS without confidence bounds is not a reportable business metric.
+
+<a href="https://github.com/amytakeuchi/Spillover-Aware-Geo-Incrementality-Experiment-Pipeline/tree/main">View code on Github</a>
+
+---
 
 ### Mobile Game A/B Testing
 Cookie Cats, a popular mobile puzzle game, imposes a ‘gate’, where players are forced to wait a significant amount of time or make an in-app purchase to progress, as players continue to progress the game. The A/B test was conducted to examine whether the ‘gate’ is better to be deployed in Level. 30 or Level. 40.
