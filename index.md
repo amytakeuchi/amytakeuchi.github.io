@@ -16,11 +16,22 @@ Debugging write-up: <a href="https://medium.com/@a.takeuchi121/building-a-produc
 </a>
 
 ---
+## Causal Price Elasticity Estimation — Double Machine Learning Pipeline
+ 
+Retailers and marketplace platforms lose revenue daily by pricing from intuition rather than causal evidence — because standard regression conflates correlation with causation (endogeneity). This project applies Double Machine Learning (DML) to the Kaggle Avocado Prices dataset (90,000+ weekly records, 54 U.S. markets) to recover causally valid own-price elasticity (PE) and promotional demand multiplier (TPRC) estimates for three avocado SKUs across Online and Offline channels.
+ 
+I built the full two-stage DML pipeline from scratch: a cross-fitted nuisance stage (K-fold, time-ordered) that residualises price and demand on confounders X — including multi-harmonic Fourier seasonality, geographic entity fixed effects across 54 cities, and channel-specific price models — followed by a final OLS stage with HC3-robust standard errors and traffic-light reliability flags. A key debugging effort lifted nuisance model R² from 0.003 → 0.282 (94×) by identifying a silent double-removal of geographic signal rooted in the Frisch-Waugh-Lovell theorem, turning all six item × channel estimates from Yellow to Green.
+ 
+<a href="https://github.com/amytakeuchi/Avocado-Price-Elasticity-DML">View code on Github</a>
+<br>
+Debugging write-up: <a href="https://medium.com/@a.takeuchi121/debugging-a-broken-causal-pipeline-how-a-frisch-waugh-lovell-insight-lifted-r%C2%B2-from-0-003-to-0-282-88a1559341bf">Debugging a Broken Causal Pipeline: How a Frisch-Waugh-Lovell Insight Lifted R² from 0.003 to 0.282 →</a>
+ 
+---
 
 ### Mobile Game A/B Testing
-Cookie Cats, a popular mobile puzzle game, imposes a ‘gate’, where players are forced to wait a significant amount of time or make an in-app purchase to progress, as players continue to progress the game. The A/B test was conducted to examine whether the ‘gate’ is better to be deployed in Level. 30 or Level. 40.
+Cookie Cats, a top-grossing mobile puzzle game, uses a monetisation 'gate' — a forced wait or in-app purchase — to generate revenue as players progress. A product team needed to decide whether placing this gate at Level 30 or Level 40 maximises Day-1 and Day-7 player retention, the metrics most directly linked to long-term lifetime value.
 
-In this project, I designed and conducted Hypothesis Testing by understanding the business problem, forming a hypothesis, and evaluating the statistical significance for the Mobile Game user retention.
+Working with 90,000+ player records, I designed the full hypothesis testing framework end-to-end: defined null and alternative hypotheses grounded in behavioural economics (the 'hedonic adaptation' mechanism behind gate placement), checked randomisation validity and sample-ratio mismatch, selected and applied a two-proportion z-test with Bonferroni correction for multiple comparisons, and quantified effect size via relative lift and bootstrap confidence intervals. Gate 30 produced a statistically significant +18.2% improvement in Day-7 retention (p < 0.01), with a 95% CI that excludes zero — providing a clear, actionable recommendation to the product team.
 
 ### [Project Summary Page](/ABTesting)
 
