@@ -1,7 +1,7 @@
 ## Portfolio
 
 ---
-### Geo Incrementality Measurement — Causal Inference Pipeline
+## Geo Incrementality Measurement — Causal Inference Pipeline
 Paid social campaigns are easy to run and hard to measure. Attribution tools overcount. Last-click models ignore cannibalization. Aggregate sales trends conflate campaign effects with seasonality. The only credible answer is a geo experiment with a rigorous causal estimator — but even then, a single model is not enough.
 
 This project builds a production-style geo incrementality measurement pipeline across 60 markets, implementing five causal estimators in parallel (DiD, TBR, CUPED, CUPAC, Synthetic Control, Bayesian Hierarchical), a spillover-aware validity gate, and a business reporting layer that translates statistical lift into iROAS with full confidence interval propagation.
@@ -16,6 +16,18 @@ Debugging write-up: <a href="https://medium.com/@a.takeuchi121/building-a-produc
 </a>
 
 ---
+## Bayesian Marketing Mix Modeling — Geo-Experiment Calibration
+Marketing attribution typically forces a choice between biased observational models and expensive experiments. For this project, I developed a production-grade Bayesian implementation to determine the optimal allocation of a $500K experimentation budget: should it be spent on more geo-tests or on improving model specification?
+
+Working with 156 weeks of spend data, I engineered an end-to-end causal inference pipeline in PyMC 5.0. The system features a custom "fusion" layer that utilizes Bayesian precision weighting to automatically calibrate observational priors with experimental evidence. This ensures that the model only shifts its beliefs when experimental data is statistically more precise than historical trends, preventing over-correction from high-variance tests.
+
+The core technical finding was that architectural rigor—specifically adding a trend component to capture organic growth—improved model $R^2$ by 58% (0.479 to 0.755) and reduced error by 30%. In contrast, the expensive geo-experiment calibration resulted in a 0% change in $R^2$. This "null" result provided a critical business insight: the observational model was already highly accurate, validating that the $500K budget was better spent on data quality than further testing.
+
+The final model identified a 5–15% lift opportunity through budget reallocation from saturated TV channels to high-ROI Search and YouTube, providing a clear, risk-adjusted roadmap for spend optimization with full 94% HDI uncertainty propagation.
+
+<a href="https://github.com/amytakeuchi/Bayesian-MMM-Calibrated-with-Incrementality/blob/main/README.md#bayesian-marketing-mix-model-with-geo-experiment-calibration">View code on Github</a>
+
+---
 ## Causal Price Elasticity Estimation — Double Machine Learning Pipeline
  
 Retailers and marketplace platforms lose revenue daily by pricing from intuition rather than causal evidence — because standard regression conflates correlation with causation (endogeneity). This project applies Double Machine Learning (DML) to the Kaggle Avocado Prices dataset (90,000+ weekly records, 54 U.S. markets) to recover causally valid own-price elasticity (PE) and promotional demand multiplier (TPRC) estimates for three avocado SKUs across Online and Offline channels.
@@ -28,7 +40,7 @@ Debugging write-up: <a href="https://medium.com/@a.takeuchi121/debugging-a-broke
  
 ---
 
-### Mobile Game A/B Testing
+## Mobile Game A/B Testing
 Cookie Cats, a top-grossing mobile puzzle game, uses a monetisation 'gate' — a forced wait or in-app purchase — to generate revenue as players progress. A product team needed to decide whether placing this gate at Level 30 or Level 40 maximises Day-1 and Day-7 player retention, the metrics most directly linked to long-term lifetime value.
 
 Working with 90,000+ player records, I designed the full hypothesis testing framework end-to-end: defined null and alternative hypotheses grounded in behavioural economics (the 'hedonic adaptation' mechanism behind gate placement), checked randomisation validity and sample-ratio mismatch, selected and applied a two-proportion z-test with Bonferroni correction for multiple comparisons, and quantified effect size via relative lift and bootstrap confidence intervals. Gate 30 produced a statistically significant +18.2% improvement in Day-7 retention (p < 0.01), with a 95% CI that excludes zero — providing a clear, actionable recommendation to the product team.
@@ -39,6 +51,7 @@ Working with 90,000+ player records, I designed the full hypothesis testing fram
 <br><br>
  <img src="images/Cookiecat_cover.png?raw=true"/>
 
+## Other Past Projects
 ---
 ### Customer Churn Classification
 A leading telecommunications company was facing high customer attrition and needed a way to identify which users were most likely to cancel their service based on customer behavior, contract type, and service usage.
