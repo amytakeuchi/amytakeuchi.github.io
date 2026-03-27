@@ -23,7 +23,7 @@ Working with 156 weeks of spend data, I engineered an end-to-end causal inferenc
 
 The core technical finding was that architectural rigor—specifically adding a trend component to capture organic growth—improved model $R^2$ by 58% (0.479 to 0.755) and reduced error by 30%. In contrast, the expensive geo-experiment calibration resulted in a 0% change in $R^2$. This "null" result provided a critical business insight: the observational model was already highly accurate, validating that the $500K budget was better spent on data quality than further testing.
 
-The final model identified a 5–15% lift opportunity through budget reallocation from saturated TV channels to high-ROI Search and YouTube, providing a clear, risk-adjusted roadmap for spend optimization with full 94% HDI uncertainty propagation.
+The final model identified a 5–15% lift opportunity —a $235k–$705k annual impact— through budget reallocation from saturated TV channels to high-ROI Search and YouTube, providing a clear, risk-adjusted roadmap for spend optimization with full 94% HDI uncertainty propagation.
 
 <a href="https://github.com/amytakeuchi/Bayesian-MMM-Calibrated-with-Incrementality/blob/main/README.md#bayesian-marketing-mix-model-with-geo-experiment-calibration">View code on Github</a>
 
