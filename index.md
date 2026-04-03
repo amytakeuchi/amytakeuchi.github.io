@@ -10,7 +10,7 @@ The central finding is not the lift estimate — it is that **three of the five 
 
 The three valid methods (CUPED, SCM, Bayes hierarchical) **converge on a consensus range** of 83K–94K incremental units against a **ground truth of 91.5K**. The primary estimator is selected by a **rule-based validity gate** that ranks on **CI availability**, not point accuracy — because an **iROAS without confidence bounds is not a reportable business metric**.
 <p align="center">
-<img src="images/04_roi_by_channel_.png" width="800" title="ROI Analysis and Uncertainty">
+<img src="images/final_recommendation.png" width="800" title="ROI Analysis and Uncertainty">
 </p>
 <p align="center"><i>Summary of the Final Recommendation</i></p>
 <br>
