@@ -27,6 +27,11 @@ Working with 156 weeks of spend data, I engineered an end-to-end **causal infere
 - **Budget Optimization:** The final model identified significant **diminishing returns in TV,** which had reached **85% of its saturation point.**
 - **Actionable Roadmap:** By quantifying **94% HDI uncertainty,** I provided a risk-adjusted recommendation to reallocate spend from saturated channels to **high-ROI Search and YouTube,** where the posterior distributions confirmed a higher probability of incremental sales.
 
+<p align="center">
+<img src="figures/04_roi_by_channel.png" width="800" title="ROI Analysis and Uncertainty">
+</p>
+<p align="center"><i>Figure 1: ROI by channel with 94% HDI and Posterior Distributions.</i></p>
+
 <a href="https://github.com/amytakeuchi/Bayesian-MMM-Calibrated-with-Incrementality/blob/main/README.md#bayesian-marketing-mix-model-with-geo-experiment-calibration">View code on Github</a>
 
 ---
