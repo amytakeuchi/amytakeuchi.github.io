@@ -9,7 +9,11 @@ This project builds a **production-style geo incrementality measurement pipeline
 The central finding is not the lift estimate — it is that **three of the five estimators fail** on the same dataset for different, diagnosable reasons: **DiD inverts the sign due to spillover contamination**, TBR attenuates by 16% for the same reason, and the **initial Synthetic Control overshoots ground truth by 18×** due to a donor scaling bug that passed **LOO stability checks**. Identifying, diagnosing, and fixing the SCM failure — collapsing pre-fit RMSPE from 51,332 to 1,998 — is the core technical contribution.
 
 The three valid methods (CUPED, SCM, Bayes hierarchical) **converge on a consensus range** of 83K–94K incremental units against a **ground truth of 91.5K**. The primary estimator is selected by a **rule-based validity gate** that ranks on **CI availability**, not point accuracy — because an **iROAS without confidence bounds is not a reportable business metric**.
-
+<p align="center">
+<img src="images/04_roi_by_channel_.png" width="800" title="ROI Analysis and Uncertainty">
+</p>
+<p align="center"><i>Summary of the Final Recommendation</i></p>
+<br>
 <a href="https://github.com/amytakeuchi/Spillover-Aware-Geo-Incrementality-Experiment-Pipeline/tree/main">View code on Github</a>
 <br>
 Debugging write-up: <a href="https://medium.com/@a.takeuchi121/building-a-production-grade-geo-incrementality-system-how-synthetic-control-failed-by-18-and-bd497ebefa08"> Building a Production-Grade Geo Incrementality System: How Synthetic Control Failed by 18× — and What Fixed It →
@@ -32,7 +36,7 @@ Working with 156 weeks of spend data, I engineered an end-to-end **causal infere
 </p>
 <p align="center"><i>Figure: ROI by channel with 94% HDI and Posterior Distributions.</i></p>
 
-<a href="https://github.com/amytakeuchi/Bayesian-MMM-Calibrated-with-Incrementality/blob/main/README.md#bayesian-marketing-mix-model-with-geo-experiment-calibration">View code on Github</a>
+<a href="https://github.com/amytakeuchi/Bayesian-MMM-Calibrated-with-Incrementality/blob/main/README.md#bayesian-marketing-mix-model-with-geo-experiment-calibration">View code on Github</a> <br>
 Debugging write-up: <a href="https://medium.com/@a.takeuchi121/bayesian-mmm-case-study-why-model-specification-matters-more-than-you-think-e83408f79abb"> Bayesian MMM case study: Why Model Specification Matters More Than You Think →
 
 ---
@@ -41,7 +45,11 @@ Debugging write-up: <a href="https://medium.com/@a.takeuchi121/bayesian-mmm-case
 Retailers and marketplace platforms lose revenue daily by pricing from intuition rather than causal evidence — because standard regression conflates correlation with causation (endogeneity). This project applies Double Machine Learning (DML) to the Kaggle Avocado Prices dataset (90,000+ weekly records, 54 U.S. markets) to recover causally valid own-price elasticity (PE) and promotional demand multiplier (TPRC) estimates for three avocado SKUs across Online and Offline channels.
  
 I built the full two-stage DML pipeline from scratch: a cross-fitted nuisance stage (K-fold, time-ordered) that residualises price and demand on confounders X — including multi-harmonic Fourier seasonality, geographic entity fixed effects across 54 cities, and channel-specific price models — followed by a final OLS stage with HC3-robust standard errors and traffic-light reliability flags. A key debugging effort lifted nuisance model R² from 0.003 → 0.282 (94×) by identifying a silent double-removal of geographic signal rooted in the Frisch-Waugh-Lovell theorem, turning all six item × channel estimates from Yellow to Green.
- 
+<p align="center">
+<img src="images/price_elasticity.png" width="800" title="ROI Analysis and Uncertainty">
+</p>
+<p align="center"><i>Figure: Avocado Price Elasticity Estimation Results</i></p>
+<br>
 <a href="https://github.com/amytakeuchi/Avocado-Price-Elasticity-DML">View code on Github</a>
 <br>
 Debugging write-up: <a href="https://medium.com/@a.takeuchi121/debugging-a-broken-causal-pipeline-how-a-frisch-waugh-lovell-insight-lifted-r%C2%B2-from-0-003-to-0-282-88a1559341bf">Debugging a Broken Causal Pipeline: How a Frisch-Waugh-Lovell Insight Lifted R² from 0.003 to 0.282 →</a>
