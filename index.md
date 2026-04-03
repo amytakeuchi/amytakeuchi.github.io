@@ -17,13 +17,15 @@ Debugging write-up: <a href="https://medium.com/@a.takeuchi121/building-a-produc
 
 ---
 ## Bayesian Marketing Mix Modeling — Geo-Experiment Calibration
-Marketing attribution typically forces a choice between biased observational models and expensive experiments. For this project, I developed a production-grade Bayesian implementation to determine the optimal allocation of a $500K experimentation budget: should it be spent on more geo-tests or on improving model specification?
+Marketing attribution typically forces a choice between biased observational models and expensive experiments. For this project, I developed **a production-grade Bayesian implementation** to determine the optimal allocation of **a $500K experimentation budget:** specifically, whether to invest in additional geo-tests or architectural model refinement.
 
-Working with 156 weeks of spend data, I engineered an end-to-end causal inference pipeline in PyMC 5.0. The system features a custom "fusion" layer that utilizes Bayesian precision weighting to automatically calibrate observational priors with experimental evidence. This ensures that the model only shifts its beliefs when experimental data is statistically more precise than historical trends, preventing over-correction from high-variance tests.
+Working with 156 weeks of spend data, I engineered an end-to-end **causal inference pipeline in PyMC 5.0.** The system features a custom **“fusion” layer** that utilizes **Bayesian precision weighting** to automatically calibrate observational priors with experimental evidence. This ensures the model only shifts its beliefs when experimental data is statistically more precise than historical trends, preventing over-correction from high-variance tests.
 
-The core technical finding was that architectural rigor—specifically adding a trend component to capture organic growth—improved model $R^2$ by 58% (0.479 to 0.755) and reduced error by 30%. In contrast, the expensive geo-experiment calibration resulted in a 0% change in $R^2$. This "null" result provided a critical business insight: the observational model was already highly accurate, validating that the $500K budget was better spent on data quality than further testing.
-
-The final model identified a 5–15% lift opportunity —a $235k–$705k annual impact— through budget reallocation from saturated TV channels to high-ROI Search and YouTube, providing a clear, risk-adjusted roadmap for spend optimization with full 94% HDI uncertainty propagation.
+**Technical & Business Impact:**
+- **Architectural Rigor:** Adding a trend component to capture organic growth **improved model $R^2$ by 58% (0.479 to 0.755) and reduced error by 30%.**
+- **Strategic Cost Savings:** The geo-experiment calibration resulted in a 0% change in $R^2$, validating that the observational model was already robust and the **$500K budget was better spent on data quality than further testing.**
+- **Budget Optimization:** The final model identified significant **diminishing returns in TV,** which had reached **85% of its saturation point.**
+- **Actionable Roadmap:** By quantifying **94% HDI uncertainty,** I provided a risk-adjusted recommendation to reallocate spend from saturated channels to **high-ROI Search and YouTube,** where the posterior distributions confirmed a higher probability of incremental sales.
 
 <a href="https://github.com/amytakeuchi/Bayesian-MMM-Calibrated-with-Incrementality/blob/main/README.md#bayesian-marketing-mix-model-with-geo-experiment-calibration">View code on Github</a>
 
