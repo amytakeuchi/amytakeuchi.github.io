@@ -4,7 +4,7 @@
 ## Marketing Funel Analytics Dashboard
 Delivered self-service Tableau dashboard analyzing seller acquisition funnel across 8K MQLs, 10 channels, and 25+ reps; uncovered social channel converting at half the funnel average and identified CRM instrumentation gap leaving 89.5% of lead drop-off unattributable by stage.
 <p align="center">
-<img src="" width="800" title="Interactive Dashboard covering Funnel Analysis, Cohort Analysis, Channel/Segment, Sales Rep performances, & Data Quality">
+<img src="images/Marketing_Dashboard.png" width="800" title="Interactive Dashboard covering Funnel Analysis, Cohort Analysis, Channel/Segment, Sales Rep performances, & Data Quality">
 </p>
 <br>
 <a href="https://public.tableau.com/app/profile/amy7438/viz/OlistMarketingFunnelDashboard/Home">View dashboard on Tableau Public</a>
