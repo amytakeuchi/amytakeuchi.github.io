@@ -16,23 +16,29 @@ In free-to-play games like Cookie Cats, progression gates serve two key purposes
 - **Monetization lever** (in-app purchases to skip wait time)
 - **Engagement control** (pacing player progression to avoid burnout)
 
-However, gates introduce friction, which can negatively impact retention if poorly timed.
+However, gates introduce **friction**, which can negatively impact retention if poorly timed.
 
 **Core Business Question**
-- Where should the first gate be placed to optimize player retention and engagement?
+*Where should the first gate be placed to optimize player retention and engagement?*
 
 - **Control:** Gate at Level 30
 - **Treatment:** Gate at Level 40
 
-
- 
-
-**Project description:** Project summary: Cookie Cats, a popular mobile puzzle game, imposes a ‘gate’, where players are forced to wait a significant amount of time or make an in-app purchase to progress, as players continue to progress the game. The A/B test was conducted to examine whether the ‘gate’ is better to be deployed in Level. 30 or Level. 40. 
-
-### 1. Problem Statement
-
-Cookie Cats is a hugely popular mobile puzzle game developed by Tactile Entertainment. It's a classic "connect three"--style puzzle game where the player must connect tiles of the same color to clear the board and win the level. It also features singing cats.
  <img src="images/Cookiecat_img.png?raw=true"/>
+
+# Experimental Design
+- Sample size: 90,189 players (randomized)
+- Unit of analysis: Player-level
+- Primary metrics:
+1-day retention (short-term engagement)
+7-day retention (long-term engagement)
+- Secondary metric:
+Total game rounds played
+
+This is a classic product tradeoff experiment:
+*Reduce friction (later gate) vs. maintain structure (earlier gate)*
+
+
 
 As players advance in the game, they'll encounter occasional gates that require a significant amount of waiting timeor making in-app purchases to proceed, boosting purchases and providing players a necessary pause, potentially enhancing their enjoyment and prolonging engagement. This time, the company wants to know where should they impose the first gate to the players to retain more users. They will initially divide players into two groups: one that encounters the gate at level 30 and the other at level 40. Their specific focus will be on evaluating the impact of this level difference on player retention. 
 
