@@ -1,6 +1,6 @@
 ## Mobile Game Experimentation: Optimizing Progression Friction in Cookie Cats
 
-# Executive Summary
+### Executive Summary
 I analyzed a large-scale A/B test (~90K users) to evaluate how progression friction (game “gates”) impacts player retention and engagement in a mobile game.
 
 **Key result:**
@@ -10,7 +10,7 @@ I analyzed a large-scale A/B test (~90K users) to evaluate how progression frict
 Recommendation:
  → Keep the gate at Level 30 to maximize long-term player retention and downstream monetization potential
 
-# Business Context & Problem Framing
+### Business Context & Problem Framing
 In free-to-play games like Cookie Cats, progression gates serve two key purposes:
 
 - **Monetization lever** (in-app purchases to skip wait time)
@@ -26,7 +26,7 @@ However, gates introduce **friction**, which can negatively impact retention if 
 
  <img src="images/Cookiecat_img.png?raw=true"/>
 
-# Experimental Design
+### Experimental Design
 - **Sample size:** 90,189 players (randomized)
 - **Unit of analysis:** Player-level
 - **Primary metrics:**
@@ -49,7 +49,7 @@ The variables of the dataset are:
 
 When a player got the game, they were randomly put into either the gate_30 or gate_40 group.
 
-### 2. Hypothesis & Statistical Approach
+### Hypothesis & Statistical Approach
 - **Null hypothesis (H₀):** No difference in retention between Level 30 and Level 40
 - **Alternative (H₁):** Retention differs between the two groups
 
@@ -77,7 +77,7 @@ The retention rates after 1 day are 44.8% (Gate 30) vs 44.2% (Gate 40) while 7-d
 
 By plotting the total rounds of games that the players in both groups had gone through, it was found that fewer players were retained in the game as the game rounds progressed. also, 3994 players never played the game after installing the game(!).
 
-### 4. Hypothesis Testing & Key Finding
+### Hypothesis Testing & Key Finding
  <img src="images/Cookiecat_results.png?raw=true"/>
  Retention Impact
 | Metric          | Gate @ Level 30 | Gate @ Level 40 | Impact             |
@@ -93,7 +93,7 @@ By plotting the total rounds of games that the players in both groups had gone t
   - Statistically significant decrease
   - Strong evidence that delaying the gate harms retention
 
-### 5. Interpretation (What This Means for the Product)/Business recommendations
+### Interpretation (What This Means for the Product)/Business recommendations
 **Let's go back to the business question**: does moving the first gate in Cookie Cats from level 30 to level 40 affect player retention and a number of rounds? This time, we set the retention rate as the primary metric to assess the problem.
 <br/>
 At first glance, delaying the gate (Level 40) seems beneficial:
