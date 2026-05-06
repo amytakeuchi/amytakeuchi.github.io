@@ -1,4 +1,31 @@
-## Mobile Games A/B Testing - Cookie Cats
+## Mobile Game Experimentation: Optimizing Progression Friction in Cookie Cats
+
+# Executive Summary
+I analyzed a large-scale A/B test (~90K users) to evaluate how progression friction (game “gates”) impacts player retention and engagement in a mobile game.
+
+**Key result:**
+- Moving the first gate from Level 30 → Level 40 decreases retention
+- The effect is statistically significant for 7-day retention, a critical long-term engagement metric
+
+Recommendation:
+ → Keep the gate at Level 30 to maximize long-term player retention and downstream monetization potential
+
+# Business Context & Problem Framing
+In free-to-play games like Cookie Cats, progression gates serve two key purposes:
+
+- **Monetization lever** (in-app purchases to skip wait time)
+- **Engagement control** (pacing player progression to avoid burnout)
+
+However, gates introduce friction, which can negatively impact retention if poorly timed.
+
+**Core Business Question**
+- Where should the first gate be placed to optimize player retention and engagement?
+
+- **Control:** Gate at Level 30
+- **Treatment:** Gate at Level 40
+
+
+ 
 
 **Project description:** Project summary: Cookie Cats, a popular mobile puzzle game, imposes a ‘gate’, where players are forced to wait a significant amount of time or make an in-app purchase to progress, as players continue to progress the game. The A/B test was conducted to examine whether the ‘gate’ is better to be deployed in Level. 30 or Level. 40. 
 
