@@ -79,11 +79,11 @@ By plotting the total rounds of games that the players in both groups had gone t
 
 ### 5. Hypothesis Testing & Key Finding
  <img src="images/Cookiecat_results.png?raw=true"/>
- Retention Impact
-| Retention Impact | Metric | Gate @ Level 30 | Gate @ Level 40 | Impact |
-| :--- | :--- | :--- | :--- | :--- |
-| 1-day retention | Retention Rate | 44.8% | 44.2% | Slight decline |
-| 7-day retention | Retention Rate | 19.0% | 18.2% | Meaningful decline |
+ **Retention Impact**
+| Metric | Gate @ Level 30 | Gate @ Level 40 | Impact |
+| :--- | :--- | :--- | :--- |
+| **1-day retention** | 44.8% | 44.2% | Slight decline |
+| **7-day retention** | 19.0% | 18.2% | Meaningful decline |
 
 **Statistical Significance**
 - 1-day retention:
