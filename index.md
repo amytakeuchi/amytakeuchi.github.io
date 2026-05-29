@@ -60,15 +60,7 @@ Built a production-grade Bayesian MMM in PyMC 5.0 on 156 weeks of spend data, fe
 <a href="https://github.com/amytakeuchi/Bayesian-MMM-Calibrated-with-Incrementality/blob/main/README.md#bayesian-marketing-mix-model-with-geo-experiment-calibration">View code on Github</a> <br>
 Debugging write-up: <a href="https://medium.com/@a.takeuchi121/bayesian-mmm-case-study-why-model-specification-matters-more-than-you-think-e83408f79abb"> Bayesian MMM case study: Why Model Specification Matters More Than You Think →
  
-## Other Past Projects
----
-### Customer Churn Classification
-A leading telecommunications company was facing high customer attrition and needed a way to identify which users were most likely to cancel their service based on customer behavior, contract type, and service usage.
-
-In this project, I (1) conducted exploratory data analysis (EDA) and created 20+ visualizations to uncover key patterns in customer churn behavior, (2) engineered domain-specific features from raw customer data, assessed multicollinearity, and applied SMOTE to address class imbalance, (3) developed and compared Logistic Regression, Random Forest, XGBoost, and AdaBoost models using GridSearchCV, improving Logistic Regression accuracy from 0.26 to 0.81 and F1 score by 50% from 0.42 to 0.63. All modeling and analysis were performed in Python using Scikit-learn, XGBoost, and Pandas.
-
-<a href="https://github.com/amytakeuchi/Customer-Churn-Classification">View code on Github</a>
-
+# Other Past Projects
 ---
 ### Marketplace Listing Price Prediction
 Mercari, a Japanese online marketplace, is confronting a challenge to determine the product listing price based on different product categories, brand names, and specs and make suggestions about the optimal selling price to the sellers.
@@ -82,6 +74,14 @@ In this project, I (1) created 20+ Visualizations to identify the patterns and t
 [![](https://img.shields.io/badge/Python-white?logo=Python)](#) [![](https://img.shields.io/badge/Jupyter-white?logo=Jupyter)](#) [![](https://img.shields.io/badge/Google-white?logo=Google)](#) [![](https://img.shields.io/badge/sklearn-white?logo=scikit-learn)](#)[![](https://img.shields.io/badge/pandas-white?logo=pandas)](#)
  
 ---
+### Customer Churn Classification
+A leading telecommunications company was facing high customer attrition and needed a way to identify which users were most likely to cancel their service based on customer behavior, contract type, and service usage.
+
+In this project, I (1) conducted exploratory data analysis (EDA) and created 20+ visualizations to uncover key patterns in customer churn behavior, (2) engineered domain-specific features from raw customer data, assessed multicollinearity, and applied SMOTE to address class imbalance, (3) developed and compared Logistic Regression, Random Forest, XGBoost, and AdaBoost models using GridSearchCV, improving Logistic Regression accuracy from 0.26 to 0.81 and F1 score by 50% from 0.42 to 0.63. All modeling and analysis were performed in Python using Scikit-learn, XGBoost, and Pandas.
+
+<a href="https://github.com/amytakeuchi/Customer-Churn-Classification">View code on Github</a>
+
+---
 ### Healthcare Analytics
 #### Diabetes Prediction
 In this project, I created visualizations and built binary classification models using Logistic Regression, Random Forest, and Gradient boosting to predict diabetes using patient data. Involves data visualization and preprocessing in PCA and resampling using ADASYN.
@@ -89,8 +89,6 @@ In this project, I created visualizations and built binary classification models
 <a href="https://github.com/amytakeuchi/Healthcare-Analytics/tree/main">View code on Github</a>
 
 <img src="images/Diabetes_prediction.png?raw=true"/>
-
-
 
 ---
 ### Chicago Divvy bike share membership prediction
@@ -111,9 +109,6 @@ ELo, the largest payment service in Brazil, has been partnering with merchants t
 Implemented customer cohort analysis, RFM segmentation, and K-means clustering methodology to understand purchasing patterns based on transaction history data with 1.9 million rows, enabling actionable insights for targeted marketing campaigns, personalized customer experiences, and identification of high-value customers.
 
 <a href="https://github.com/amytakeuchi/Customer-Merchant-Cohort-and-Clustering">View code on Github</a>
-
-<img src="images/Elo_Kmeans.png?" width="400" height="400"/>
-
 
 ---
 ### ETL project of invoice data
