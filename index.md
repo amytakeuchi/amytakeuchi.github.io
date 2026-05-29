@@ -11,13 +11,8 @@ Delivered self-service Tableau dashboard analyzing seller acquisition funnel acr
 
 ---
 ## Geo Incrementality Measurement — Causal Inference Pipeline
-Paid social campaigns are easy to run and hard to measure. Attribution tools overcount. Last-click models ignore cannibalization. Aggregate sales trends conflate campaign effects with seasonality. The only credible answer is a **geo experiment** with a **rigorous causal estimator** — but even then, a single model is not enough.
+Built a production-style geo experiment pipeline across 60 markets, implementing five causal estimators in parallel (DiD, TBR, CUPED, CUPAC, Synthetic Control, Bayesian Hierarchical) to measure paid social incrementality. The core contribution is diagnosing and fixing systematic estimator failures — including a Synthetic Control scaling bug that collapsed RMSPE from 51,332 to 1,998 — rather than simply reporting a lift estimate. Three valid methods converged on 83K–94K incremental units against a 91.5K ground truth, with iROAS reported only when confidence intervals were available. End-to-end ownership from validity gating to business reporting layer.
 
-This project builds a **production-style geo incrementality measurement pipeline** across 60 markets, implementing **five causal estimators in parallel (DiD, TBR, CUPED, CUPAC, Synthetic Control, Bayesian Hierarchical)**, a **spillover-aware validity gate**, and a business reporting layer that translates statistical lift into **iROAS with full confidence interval propagation**.
-
-The central finding is not the lift estimate — it is that **three of the five estimators fail** on the same dataset for different, diagnosable reasons: **DiD inverts the sign due to spillover contamination**, TBR attenuates by 16% for the same reason, and the **initial Synthetic Control overshoots ground truth by 18×** due to a donor scaling bug that passed **LOO stability checks**. Identifying, diagnosing, and fixing the SCM failure — collapsing pre-fit RMSPE from 51,332 to 1,998 — is the core technical contribution.
-
-The three valid methods (CUPED, SCM, Bayes hierarchical) **converge on a consensus range** of 83K–94K incremental units against a **ground truth of 91.5K**. The primary estimator is selected by a **rule-based validity gate** that ranks on **CI availability**, not point accuracy — because an **iROAS without confidence bounds is not a reportable business metric**.
 <p align="center">
 <img src="images/final_recommendation.png" width="800" title="ROI Analysis and Uncertainty">
 </p>
@@ -30,15 +25,7 @@ Debugging write-up: <a href="https://medium.com/@a.takeuchi121/building-a-produc
 
 ---
 ## Bayesian Marketing Mix Modeling — Geo-Experiment Calibration
-Marketing attribution typically forces a choice between biased observational models and expensive experiments. For this project, I developed **a production-grade Bayesian implementation** to determine the optimal allocation of **a $500K experimentation budget:** specifically, whether to invest in additional geo-tests or architectural model refinement.
-
-Working with 156 weeks of spend data, I engineered an end-to-end **causal inference pipeline in PyMC 5.0.** The system features a custom **“fusion” layer** that utilizes **Bayesian precision weighting** to automatically calibrate observational priors with experimental evidence. This ensures the model only shifts its beliefs when experimental data is statistically more precise than historical trends, preventing over-correction from high-variance tests.
-
-**Technical & Business Impact:**
-- **Architectural Rigor:** Adding a trend component to capture organic growth **improved model $R^2$ by 58% (0.479 to 0.755) and reduced error by 30%.**
-- **Strategic Cost Savings:** The geo-experiment calibration resulted in a 0% change in $R^2$, validating that the observational model was already robust and the **$500K budget was better spent on data quality than further testing.**
-- **Budget Optimization:** The final model identified significant **diminishing returns in TV,** which had reached **85% of its saturation point.**
-- **Actionable Roadmap:** By quantifying **94% HDI uncertainty,** I provided a risk-adjusted recommendation to reallocate spend from saturated channels to **high-ROI Search and YouTube,** where the posterior distributions confirmed a higher probability of incremental sales.
+Built a production-grade Bayesian MMM in PyMC 5.0 on 156 weeks of spend data, featuring a custom fusion layer that uses Bayesian precision weighting to calibrate observational priors with experimental evidence — preventing over-correction from high-variance geo-tests. A trend component addition improved model R² by 58% (0.479 → 0.755), while geo-experiment calibration showed 0% R² change, redirecting a $500K experimentation budget toward data quality instead. The model identified TV at 85% saturation and, using 94% HDI uncertainty quantification, produced a risk-adjusted recommendation to reallocate spend toward high-ROI Search and YouTube.
 
 <p align="center">
 <img src="images/04_roi_by_channel_.png" width="800" title="ROI Analysis and Uncertainty">
@@ -50,10 +37,8 @@ Debugging write-up: <a href="https://medium.com/@a.takeuchi121/bayesian-mmm-case
 
 ---
 ## Causal Price Elasticity Estimation — Double Machine Learning Pipeline
+ Applied Double Machine Learning (DML) to 90,000+ weekly avocado price records across 54 U.S. markets to recover causally valid price elasticity and promotional demand multipliers — bypassing the endogeneity that invalidates standard regression for pricing decisions. Built the full two-stage pipeline from scratch: cross-fitted nuisance models with Fourier seasonality, geographic fixed effects, and channel-specific price controls, followed by OLS with HC3-robust standard errors and reliability flagging. A key debugging effort — identifying silent double-removal of geographic signal via the Frisch-Waugh-Lovell theorem — lifted nuisance R² by 94× (0.003 → 0.282), turning all six item × channel estimates from unreliable to green-flagged.
  
-Retailers and marketplace platforms lose revenue daily by pricing from intuition rather than causal evidence — because standard regression conflates correlation with causation (endogeneity). This project applies Double Machine Learning (DML) to the Kaggle Avocado Prices dataset (90,000+ weekly records, 54 U.S. markets) to recover causally valid own-price elasticity (PE) and promotional demand multiplier (TPRC) estimates for three avocado SKUs across Online and Offline channels.
- 
-I built the full two-stage DML pipeline from scratch: a cross-fitted nuisance stage (K-fold, time-ordered) that residualises price and demand on confounders X — including multi-harmonic Fourier seasonality, geographic entity fixed effects across 54 cities, and channel-specific price models — followed by a final OLS stage with HC3-robust standard errors and traffic-light reliability flags. A key debugging effort lifted nuisance model R² from 0.003 → 0.282 (94×) by identifying a silent double-removal of geographic signal rooted in the Frisch-Waugh-Lovell theorem, turning all six item × channel estimates from Yellow to Green.
 <p align="center">
 <img src="images/price_elasticity.png" width="800" title="ROI Analysis and Uncertainty">
 </p>
