@@ -22,19 +22,6 @@ Built a production-style geo experiment pipeline across 60 markets, implementing
 <br>
 Debugging write-up: <a href="https://medium.com/@a.takeuchi121/building-a-production-grade-geo-incrementality-system-how-synthetic-control-failed-by-18-and-bd497ebefa08"> Building a Production-Grade Geo Incrementality System: How Synthetic Control Failed by 18× — and What Fixed It →
 </a>
-
----
-## Bayesian Marketing Mix Modeling — Geo-Experiment Calibration
-Built a production-grade Bayesian MMM in PyMC 5.0 on 156 weeks of spend data, featuring a custom fusion layer that uses Bayesian precision weighting to calibrate observational priors with experimental evidence — preventing over-correction from high-variance geo-tests. A trend component addition improved model R² by 58% (0.479 → 0.755), while geo-experiment calibration showed 0% R² change, redirecting a $500K experimentation budget toward data quality instead. The model identified TV at 85% saturation and, using 94% HDI uncertainty quantification, produced a risk-adjusted recommendation to reallocate spend toward high-ROI Search and YouTube.
-
-<p align="center">
-<img src="images/04_roi_by_channel_.png" width="800" title="ROI Analysis and Uncertainty">
-</p>
-<p align="center"><i>Figure: ROI by channel with 94% HDI and Posterior Distributions.</i></p>
-
-<a href="https://github.com/amytakeuchi/Bayesian-MMM-Calibrated-with-Incrementality/blob/main/README.md#bayesian-marketing-mix-model-with-geo-experiment-calibration">View code on Github</a> <br>
-Debugging write-up: <a href="https://medium.com/@a.takeuchi121/bayesian-mmm-case-study-why-model-specification-matters-more-than-you-think-e83408f79abb"> Bayesian MMM case study: Why Model Specification Matters More Than You Think →
-
 ---
 ## Causal Price Elasticity Estimation — Double Machine Learning Pipeline
  Applied Double Machine Learning (DML) to 90,000+ weekly avocado price records across 54 U.S. markets to recover causally valid price elasticity and promotional demand multipliers — bypassing the endogeneity that invalidates standard regression for pricing decisions. Built the full two-stage pipeline from scratch: cross-fitted nuisance models with Fourier seasonality, geographic fixed effects, and channel-specific price controls, followed by OLS with HC3-robust standard errors and reliability flagging. A key debugging effort — identifying silent double-removal of geographic signal via the Frisch-Waugh-Lovell theorem — lifted nuisance R² by 94× (0.003 → 0.282), turning all six item × channel estimates from unreliable to green-flagged.
@@ -47,20 +34,27 @@ Debugging write-up: <a href="https://medium.com/@a.takeuchi121/bayesian-mmm-case
 <a href="https://github.com/amytakeuchi/Avocado-Price-Elasticity-DML">View code on Github</a>
 <br>
 Debugging write-up: <a href="https://medium.com/@a.takeuchi121/debugging-a-broken-causal-pipeline-how-a-frisch-waugh-lovell-insight-lifted-r%C2%B2-from-0-003-to-0-282-88a1559341bf">Debugging a Broken Causal Pipeline: How a Frisch-Waugh-Lovell Insight Lifted R² from 0.003 to 0.282 →</a>
- 
 ---
-
 ## Mobile Game A/B Testing
-Cookie Cats, a top-grossing mobile puzzle game, uses a monetisation 'gate' — a forced wait or in-app purchase — to generate revenue as players progress. A product team needed to decide whether placing this gate at Level 30 or Level 40 maximises Day-1 and Day-7 player retention, the metrics most directly linked to long-term lifetime value.
-
-Working with 90,000+ player records, I designed the full hypothesis testing framework end-to-end: defined null and alternative hypotheses grounded in behavioural economics (the 'hedonic adaptation' mechanism behind gate placement), checked randomisation validity and sample-ratio mismatch, selected and applied a two-proportion z-test with Bonferroni correction for multiple comparisons, and quantified effect size via relative lift and bootstrap confidence intervals. Gate 30 produced a statistically significant +18.2% improvement in Day-7 retention (p < 0.01), with a 95% CI that excludes zero — providing a clear, actionable recommendation to the product team.
+Designed an end-to-end hypothesis testing framework on 90,000+ player records to determine whether a monetisation gate at Level 30 vs. 40 maximises Day-1 and Day-7 retention for a top-grossing mobile puzzle game. Applied a two-proportion z-test with Bonferroni correction, randomisation validity checks, and bootstrap confidence intervals — grounded in behavioral economics (hedonic adaptation). Gate 30 delivered a statistically significant +18.2% lift in Day-7 retention (p < 0.01, 95% CI excludes zero), yielding a clear product recommendation tied directly to long-term LTV.
 
 ### [Project Summary Page](/ABTesting)
 
 <a href="https://github.com/amytakeuchi/AB-Testing/tree/main">View code on Github</a>
 <br><br>
  <img src="images/Cookiecat_cover.png?raw=true"/>
+---
+## Bayesian Marketing Mix Modeling — Geo-Experiment Calibration
+Built a production-grade Bayesian MMM in PyMC 5.0 on 156 weeks of spend data, featuring a custom fusion layer that uses Bayesian precision weighting to calibrate observational priors with experimental evidence — preventing over-correction from high-variance geo-tests. A trend component addition improved model R² by 58% (0.479 → 0.755), while geo-experiment calibration showed 0% R² change, redirecting a $500K experimentation budget toward data quality instead. The model identified TV at 85% saturation and, using 94% HDI uncertainty quantification, produced a risk-adjusted recommendation to reallocate spend toward high-ROI Search and YouTube.
 
+<p align="center">
+<img src="images/04_roi_by_channel_.png" width="800" title="ROI Analysis and Uncertainty">
+</p>
+<p align="center"><i>Figure: ROI by channel with 94% HDI and Posterior Distributions.</i></p>
+
+<a href="https://github.com/amytakeuchi/Bayesian-MMM-Calibrated-with-Incrementality/blob/main/README.md#bayesian-marketing-mix-model-with-geo-experiment-calibration">View code on Github</a> <br>
+Debugging write-up: <a href="https://medium.com/@a.takeuchi121/bayesian-mmm-case-study-why-model-specification-matters-more-than-you-think-e83408f79abb"> Bayesian MMM case study: Why Model Specification Matters More Than You Think →
+ 
 ## Other Past Projects
 ---
 ### Customer Churn Classification
