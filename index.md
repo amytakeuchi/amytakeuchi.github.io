@@ -63,9 +63,9 @@ Debugging write-up: <a href="https://medium.com/@a.takeuchi121/bayesian-mmm-case
 # Other Past Projects
 ---
 ### Marketplace Listing Price Prediction
-Mercari, a Japanese online marketplace, is confronting a challenge to determine the product listing price based on different product categories, brand names, and specs and make suggestions about the optimal selling price to the sellers.
 
-In this project, I (1) created 20+ Visualizations to identify the patterns and trends for the pricing of listed products, (2) built a listing price recommendation tool based on listing features and different Linear Regression models, using Python ScikitLearn and Pandas, (3) conducted Topic Modeling to identify the top 10 topics that appear in the descriptions of listings and visualized using PCA and t-SNE; performed extensive text data cleaning.
+Built a two-part pricing intelligence system on 148K+ marketplace listings: a regression-based price recommendation engine using listing features (category, brand, condition, shipping) and an NLP pipeline using LDA topic modeling to surface the 10 dominant seller description clusters. t-SNE cluster analysis identified four high-signal, separable categories — deals/bundles, women's apparel, phones, and home goods — directly informing where category-specific pricing rules add the most business value. Findings revealed that 89%+ of listings contain fewer than 20 words, diagnosing a structural data quality gap with direct implications for seller tooling and model confidence.
+
 <br><br>
 <a href="https://github.com/amytakeuchi/Marketplace-price-prediction">View code on Github</a>
 
