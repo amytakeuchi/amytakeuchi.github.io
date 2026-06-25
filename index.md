@@ -10,6 +10,14 @@ Delivered self-service Tableau dashboard analyzing seller acquisition funnel acr
 <a href="https://public.tableau.com/app/profile/amy7438/viz/OlistMarketingFunnelDashboard/Home">View dashboard on Tableau Public</a>
 
 ---
+## End-to-End Ecommerce Analytics Warehouse (dbt + BigQuery)
+Built a modular analytics engineering pipeline on Olist ecommerce data, transforming 100K+ transactional records into a tested star-schema warehouse with dbt (staging → intermediate → marts), enabling standardized KPIs across revenue, customer, product, and delivery performance analytics.
+
+<br>
+<a href="https://github.com/amytakeuchi/Olist-dbt-analytics-engineering">View code on Github</a>
+<br>
+
+---
 ## Geo Incrementality Measurement — Causal Inference Pipeline
 Built a production-style geo experiment pipeline across 60 markets, implementing five causal estimators in parallel (DiD, TBR, CUPED, CUPAC, Synthetic Control, Bayesian Hierarchical) to measure paid social incrementality. The core contribution is diagnosing and fixing systematic estimator failures — including a Synthetic Control scaling bug that collapsed RMSPE from 51,332 to 1,998 — rather than simply reporting a lift estimate. Three valid methods converged on 83K–94K incremental units against a 91.5K ground truth, with iROAS reported only when confidence intervals were available. End-to-end ownership from validity gating to business reporting layer.
 
