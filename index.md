@@ -12,7 +12,6 @@ Delivered self-service Tableau dashboard analyzing seller acquisition funnel acr
 ---
 ## End-to-End Ecommerce Analytics Warehouse (dbt + BigQuery)
 Built a modular analytics engineering pipeline on Olist ecommerce data, transforming 100K+ transactional records into a tested star-schema warehouse with dbt (staging → intermediate → marts), enabling standardized KPIs across revenue, customer, product, and delivery performance analytics.
-
 <br>
 <a href="https://github.com/amytakeuchi/Olist-dbt-analytics-engineering">View code on Github</a>
 <br>
@@ -20,7 +19,6 @@ Built a modular analytics engineering pipeline on Olist ecommerce data, transfor
 ---
 ## AI-Powered Experiment Readout Generator
 Built an automation pipeline turning raw A/B test results into stakeholder-ready decision readouts, routing each experiment to the correct significance test by metric type — two-proportion z-test for conversion metrics (click-through, retention, open rate), Welch's t-test for continuous metrics (order value, session duration) — then passing lift, confidence interval, and p-value to Claude to draft a plain-English summary and recommendation (ship / hold / kill). Includes inconclusive cases alongside clear wins to confirm the tool reasons about significance rather than defaulting to "ship it," with graceful degradation (template fallback if the LLM call fails) for unattended reliability.
-
 <br>
 <a href="https://github.com/amytakeuchi/experiment-readout-generator">View code on Github</a>
 <br>
@@ -41,7 +39,6 @@ Debugging write-up: <a href="https://medium.com/@a.takeuchi121/building-a-produc
 <p align="center"><i>Summary of the Final Recommendation</i></p>
 
 ---
-
 ## Causal Price Elasticity Estimation — Double Machine Learning Pipeline
  Applied Double Machine Learning (DML) to 90,000+ weekly avocado price records across 54 U.S. markets to recover causally valid price elasticity and promotional demand multipliers — bypassing the endogeneity that invalidates standard regression for pricing decisions. Built the full two-stage pipeline from scratch: cross-fitted nuisance models with Fourier seasonality, geographic fixed effects, and channel-specific price controls, followed by OLS with HC3-robust standard errors and reliability flagging. A key debugging effort — identifying silent double-removal of geographic signal via the Frisch-Waugh-Lovell theorem — lifted nuisance R² by 94× (0.003 → 0.282), turning all six item × channel estimates from unreliable to green-flagged.
 <br>
@@ -54,12 +51,10 @@ Debugging write-up: <a href="https://medium.com/@a.takeuchi121/debugging-a-broke
 <p align="center"><i>Figure: Avocado Price Elasticity Estimation Results</i></p>
 
 ---
-
 ## Mobile Game A/B Testing
 Designed an end-to-end hypothesis testing framework on 90,000+ player records to determine whether a monetisation gate at Level 30 vs. 40 maximises Day-1 and Day-7 retention for a top-grossing mobile puzzle game. Applied a two-proportion z-test with Bonferroni correction, randomisation validity checks, and bootstrap confidence intervals — grounded in behavioral economics (hedonic adaptation). Gate 30 delivered a statistically significant +18.2% lift in Day-7 retention (p < 0.01, 95% CI excludes zero), yielding a clear product recommendation tied directly to long-term LTV.
 
 ### [Project Summary Page](/ABTesting)
-
 <a href="https://github.com/amytakeuchi/AB-Testing/tree/main">View code on Github</a>
 <br><br>
  <img src="images/Cookiecat_cover.png?raw=true"/>
