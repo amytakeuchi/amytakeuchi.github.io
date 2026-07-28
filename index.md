@@ -18,6 +18,13 @@ Built a modular analytics engineering pipeline on Olist ecommerce data, transfor
 <br>
 
 ---
+## AI-Powered Experiment Readout Generator
+Built an automation pipeline that turns raw A/B test results into stakeholder-ready decision readouts, combining statistical rigor with LLM-generated summaries. The pipeline routes each experiment to the correct significance test based on metric type — a two-proportion z-test for conversion metrics (click-through, retention, open rate) and Welch's t-test for continuous metrics (order value, session duration) — then passes the computed lift, confidence interval, and p-value to Claude to draft a plain-English summary and recommendation (ship / hold / kill). Deliberately includes inconclusive test cases alongside clear wins to confirm the tool reasons about significance rather than defaulting to "ship it." Designed with graceful degradation (falls back to a deterministic template if the LLM call fails) for reliability in an unattended workflow.
+
+<br>
+<a href="https://github.com/amytakeuchi/experiment-readout-generator">View code on Github</a>
+<br>
+---
 ## Geo Incrementality Measurement — Causal Inference Pipeline
 Built a production-style geo experiment pipeline across 60 markets, implementing five causal estimators in parallel (DiD, TBR, CUPED, CUPAC, Synthetic Control, Bayesian Hierarchical) to measure paid social incrementality. The core contribution is diagnosing and fixing systematic estimator failures — including a Synthetic Control scaling bug that collapsed RMSPE from 51,332 to 1,998 — rather than simply reporting a lift estimate. Three valid methods converged on 83K–94K incremental units against a 91.5K ground truth, with iROAS reported only when confidence intervals were available. End-to-end ownership from validity gating to business reporting layer.
 
