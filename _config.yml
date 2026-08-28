@@ -1,4 +1,3 @@
-```yaml
 title: Amy Takeuchi
 
 description: >
@@ -20,4 +19,4 @@ plugins:
   - jekyll-remote-theme
 
 google_analytics: UA-000000-0
-```
+
