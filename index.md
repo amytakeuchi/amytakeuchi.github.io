@@ -17,6 +17,13 @@ Built a modular analytics engineering pipeline on Olist ecommerce data, transfor
 <br>
 
 ---
+## Customer Retention & Behavioral Segmentation Analytics
+Analyzed 300K+ cardholder transactions using RFM, survival analysis, and clustering to diagnose churn, model reactivation timing, and segment customers for targeted retention strategy.
+<br>
+<a href="[https://github.com/amytakeuchi/experiment-readout-generator](https://github.com/amytakeuchi/Fintech-Product-Analytics/blob/main/README.md)">View code on Github</a>
+<br>
+---
+
 ## AI-Powered Experiment Readout Generator
 Built an automation pipeline turning raw A/B test results into stakeholder-ready decision readouts, routing each experiment to the correct significance test by metric type — two-proportion z-test for conversion metrics (click-through, retention, open rate), Welch's t-test for continuous metrics (order value, session duration) — then passing lift, confidence interval, and p-value to Claude to draft a plain-English summary and recommendation (ship / hold / kill). Includes inconclusive cases alongside clear wins to confirm the tool reasons about significance rather than defaulting to "ship it," with graceful degradation (template fallback if the LLM call fails) for unattended reliability.
 <br>
