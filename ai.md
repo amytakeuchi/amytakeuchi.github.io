@@ -1,4 +1,5 @@
-[← Go back to main page](index.md)(./)
+[← Go back to main page](index.md) 
+
 **Portfolio**
 
 [ Product Analytics + Experimentation ](product-analytics) ·
