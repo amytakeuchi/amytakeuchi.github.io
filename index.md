@@ -2,7 +2,7 @@
 # Explore My Work
 ### Causal Inference
 Measure incremental business impact.
-[Explore Causal Inference →](causal-inference)
+[Explore Causal Inference →](causal-inference.md)
 
 ---
 ## Marketing Funnel Analytics Dashboard
