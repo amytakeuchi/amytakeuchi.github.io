@@ -1,13 +1,17 @@
 ## Portfolio
 # Explore My Work
-### Causal Inference
-Measure incremental business impact.
-[Explore Causal Inference →](causal-inference.md)
-
 ### Product & Marketing Analytics
 Understand users, retention, and experimentation - A/BTesting & Bayesian MMM (PyMC).
 
 [Explore Product Analytics →](product-analytics)
+
+### Causal Inference
+Measure incremental business impact.
+[Explore Causal Inference →](causal-inference.md)
+
+### Analytics & Data Engineering
+ETL + Data modeling.
+[Explore Analytics & Data Engineering →](analytics-engineering)
 
 ### AI & GenAI
 Build AI-powered analytics workflows.
