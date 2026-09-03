@@ -1,4 +1,4 @@
-[Go back to main page →](index.md)
+[← Go back to main page](index.md)
 # AI
 
 Build AI-powered analytics workflows.
