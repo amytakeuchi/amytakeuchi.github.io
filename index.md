@@ -4,6 +4,21 @@
 Measure incremental business impact.
 [Explore Causal Inference →](causal-inference.md)
 
+### Product & Marketing Analytics
+Understand users, retention, and experimentation - A/BTesting & Bayesian MMM (PyMC).
+
+[Explore Product Analytics →](product-analytics)
+
+### AI & GenAI
+Build AI-powered analytics workflows.
+
+[Explore AI →](ai)
+
+### Machine Learning/Predictive Modeling
+Predictive modeling and applied ML.
+
+[Explore Machine Learning →](machine-learning)
+
 ---
 ## Marketing Funnel Analytics Dashboard
 Delivered self-service Tableau dashboard analyzing seller acquisition funnel across 8K MQLs, 10 channels, and 25+ reps; uncovered social channel converting at half the funnel average and identified CRM instrumentation gap leaving 89.5% of lead drop-off unattributable by stage.
