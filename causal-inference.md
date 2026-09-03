@@ -1,4 +1,14 @@
 [← Go back to main page](index.md)
+
+**Portfolio**
+
+[ Product Analytics + Experimentation ](product-analytics) ·
+[ Causal Inference ](causal-inference) ·
+[ AI & GenAI ](ai) ·
+[ Analytics/Data Engineering ](analytics-engineering) ·
+[ Machine Learning ](machine-learning)
+
+
 # Causal Inference
 
 I use causal inference and experimentation to estimate
