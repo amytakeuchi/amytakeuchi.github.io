@@ -1,6 +1,18 @@
 # Product & Marketing analytics
 Understand users, retention, marketing performance, and experimentation.
 
+---
+
+## Featured Writing
+
+### Before Metrics: How Product Analysts Structure Ambiguous Problems in Real Product Decisions
+
+A framework for approaching ambiguous product problems before jumping into metrics — starting with the decision, defining the user behavior that matters, and connecting analysis to an actionable product decision.
+
+[Read the Medium article →](https://medium.com/@a.takeuchi121/before-metrics-how-product-analysts-structure-ambiguous-problems-in-real-product-decisions-fe3e388df297)
+
+---
+
 ### Featured Projects
 ---
 ## Marketing Funnel Analytics Dashboard
