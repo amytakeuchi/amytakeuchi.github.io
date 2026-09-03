@@ -1,4 +1,14 @@
 [← Go back to main page](index.md)
+
+**Portfolio**
+
+[ Product Analytics + Experimentation ](product-analytics) ·
+[ Causal Inference ](causal-inference) ·
+[ AI & GenAI ](ai) ·
+[ Analytics/Data Engineering ](analytics-engineering) ·
+[ Machine Learning ](machine-learning)
+
+
 # Analytics & Data Engineering
 
 ETL workflow + Data Modeling (raw → staging → intermediate → marts)
