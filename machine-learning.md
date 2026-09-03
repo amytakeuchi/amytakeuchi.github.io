@@ -1,4 +1,13 @@
 [← Go back to main page](index.md)
+
+**Portfolio**
+
+[ Product Analytics + Experimentation ](product-analytics) ·
+[ Causal Inference ](causal-inference) ·
+[ AI & GenAI ](ai) ·
+[ Analytics/Data Engineering ](analytics-engineering) ·
+[ Machine Learning ](machine-learning)
+
 # Machine Learning/Predictive Modeling
 
 Predictive modeling and applied ML.
