@@ -1,4 +1,8 @@
 ## Portfolio
+# Explore My Work
+### Causal Inference
+Measure incremental business impact.
+[Explore Causal Inference →](causal-inference)
 
 ---
 ## Marketing Funnel Analytics Dashboard
