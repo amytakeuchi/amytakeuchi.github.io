@@ -1,9 +1,7 @@
 ## Portfolio
 # Explore My Work
 ### Product & Marketing Analytics
-Understand users, retention, and experimentation - A/BTesting & Bayesian MMM (PyMC).
-
-[Explore Product Analytics →](product-analytics)
+Understand users, retention, and experimentation - A/BTesting & Bayesian MMM (PyMC). [Explore Product Analytics →](product-analytics)
 
 ### Causal Inference
 Measure incremental business impact.
