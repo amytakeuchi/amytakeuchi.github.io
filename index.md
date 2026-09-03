@@ -12,13 +12,10 @@ ETL + Data modeling.
 [Explore Analytics & Data Engineering →](analytics-engineering)
 
 ### AI & GenAI
-Build AI-powered analytics workflows.
-
-[Explore AI →](ai)
+Build AI-powered analytics workflows. [Explore AI →](ai)
 
 ### Machine Learning/Predictive Modeling
 Predictive modeling and applied ML.
-
 [Explore Machine Learning →](machine-learning)
 
 ---
