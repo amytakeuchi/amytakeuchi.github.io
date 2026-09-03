@@ -3,6 +3,19 @@
 I use causal inference and experimentation to estimate
 the incremental impact of business interventions.
 
+---
+
+## Featured Writing
+
+### Building a Production-Grade Geo Incrementality System
+
+**How Synthetic Control Failed by 18× — and What Fixed It**
+
+A practical case study on building a production-grade incrementality pipeline, diagnosing estimator failures, and validating causal estimates across multiple methods.
+
+[Read the Medium article →](https://medium.com/@a.takeuchi121/building-a-production-grade-geo-incrementality-system-how-synthetic-control-failed-by-18-and-bd497ebefa08)
+
+---
 ### Featured Projects
 
 ## Geo Incrementality Measurement — Causal Inference Pipeline
