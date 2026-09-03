@@ -18,7 +18,7 @@ Built a modular analytics engineering pipeline on Olist ecommerce data, transfor
 
 ---
 
-## Customer Retention & Behavioral Segmentation Analytics
+## Product Analytics: Customer Retention & Behavioral Segmentation Analytics
 Analyzed 300K+ cardholder transactions using RFM, survival analysis, and clustering to diagnose churn, model reactivation timing, and segment customers for targeted retention strategy.
 <br>
 <a href="https://github.com/amytakeuchi/Fintech-Product-Analytics/blob/main/README.md">View code on Github</a>
