@@ -25,6 +25,17 @@ A framework for approaching ambiguous product problems before jumping into metri
 
 ### Featured Projects
 ---
+
+## Product Analytics: Mobile Gaming Monetization, AdTech & LTV
+Analyzed mobile game event data across ad monetization, IAP, user acquisition, retention, and LTV to evaluate ad network/placement efficiency, player monetization funnels, and acquisition quality for sustainable revenue growth.
+<a href="https://github.com/amytakeuchi/Fintech-Product-Analytics/blob/main/README.md">View code on Github</a>
+<br>
+<p align="center">
+<img src="images/gaming_viz.png" title="Clustering & Survival by cluster/At-Risk Revenue by Tier/Cohort dropoffs">
+ </p>
+ 
+---
+
 ## Marketing Funnel Analytics Dashboard
 Delivered self-service Tableau dashboard analyzing seller acquisition funnel across 8K MQLs, 10 channels, and 25+ reps; uncovered social channel converting at half the funnel average and identified CRM instrumentation gap leaving 89.5% of lead drop-off unattributable by stage.
 <br>
