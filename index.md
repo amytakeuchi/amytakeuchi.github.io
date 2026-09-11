@@ -38,10 +38,10 @@ Built a modular analytics engineering pipeline on Olist ecommerce data, transfor
 
 ## Product Analytics: Mobile Gaming Monetization, AdTech & LTV
 Analyzed mobile game event data across ad monetization, IAP, user acquisition, retention, and LTV to evaluate ad network/placement efficiency, player monetization funnels, and acquisition quality for sustainable revenue growth.
-<a href="[https://github.com/amytakeuchi/Fintech-Product-Analytics/blob/main/README.md](https://github.com/amytakeuchi/Mobile-Game-Player-and-Ad-Monetization-Analytics)">View code on Github</a>
+<a href="https://github.com/amytakeuchi/Fintech-Product-Analytics/blob/main/README.md">View code on Github</a>
 <br>
 <p align="center">
-<img src="images/product_analytics.png" title="Clustering & Survival by cluster/At-Risk Revenue by Tier/Cohort dropoffs">
+<img src="images/gaming_viz.png" title="Clustering & Survival by cluster/At-Risk Revenue by Tier/Cohort dropoffs">
  </p>
  
 ---
