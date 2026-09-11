@@ -36,6 +36,16 @@ Built a modular analytics engineering pipeline on Olist ecommerce data, transfor
 
 ---
 
+## Product Analytics: Mobile Gaming Monetization, AdTech & LTV
+Analyzed mobile game event data across ad monetization, IAP, user acquisition, retention, and LTV to evaluate ad network/placement efficiency, player monetization funnels, and acquisition quality for sustainable revenue growth.
+<a href="[https://github.com/amytakeuchi/Fintech-Product-Analytics/blob/main/README.md](https://github.com/amytakeuchi/Mobile-Game-Player-and-Ad-Monetization-Analytics)">View code on Github</a>
+<br>
+<p align="center">
+<img src="images/product_analytics.png" title="Clustering & Survival by cluster/At-Risk Revenue by Tier/Cohort dropoffs">
+ </p>
+ 
+---
+
 ## Product Analytics: Customer Retention & Behavioral Segmentation Analytics
 Analyzed 300K+ cardholder transactions using RFM, survival analysis, and clustering to diagnose churn, model reactivation timing, and segment customers for targeted retention strategy.
 <br>
